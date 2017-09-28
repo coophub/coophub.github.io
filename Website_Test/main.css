@@ -1,0 +1,102 @@
+#first {
+    background:
+            linear-gradient(
+            rgba(0,229,255,0.35),
+            rgba(0,229,255,0.35)
+            ),
+            url("https://images.unsplash.com/photo-1494707924465-e1426acb48cb?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=");
+    /*box-shadow: inset 105px 0px 100px 10px #000000;*/
+    height: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+
+#third {
+    /*box-shadow: inset 105px 0px 100px 10px #000000;*/
+    background:
+            fixed,
+            linear-gradient(
+                    rgba(0,229,255,0.35),
+                    rgba(0,229,255,0.35)
+            ),
+            url("https://images.unsplash.com/photo-1461749280684-dccba630e2f6?dpr=1&auto=format&fit=crop&w=1500&h=1001&q=80&cs=tinysrgb&crop=");
+    background-attachment: fixed;
+    height: 30%;
+    background-size: cover;
+}
+
+#fifth {
+    background-image: url("https://images.unsplash.com/photo-1493689485253-f07fcbfc731b?dpr=1&auto=format&fit=crop&w=1500&h=1024&q=80&cs=tinysrgb&crop=");
+    /*box-shadow: inset 105px 0px 100px 10px #000000;*/
+    background-attachment: fixed;
+    height: 95%;
+    background-size: cover;
+}
+
+.photo {
+    background-position: center;
+    z-index: 1;
+    position: relative;
+}
+
+#second {
+    background-color: #80deea;
+    height: 40%;
+    /*box-shadow: inset 0px 0px 100px 10px #044f60;*/
+}
+
+#fourth {
+    background-color: #e0f7fa;
+    height: 20%;
+}
+
+#sixth {
+    background-color: #00838f;
+    height: 5%;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.info {
+    position: relative;
+    z-index: 2;
+}
+
+.caption {
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #111;
+    position: relative;
+}
+
+.caption span.border {
+    background-color: #006064;
+    color: #fff;
+    padding: 18px;
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+
+div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+p {
+    font-size: 15px;
+    color: #e0f7fa;
+    line-height: 5vh;
+    padding: 0;
+    margin: 0;
+}
+
+body, html {
+    font-family: "Lato", sans-serif;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
