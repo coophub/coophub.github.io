@@ -60,6 +60,7 @@
 .info {
     position: relative;
     z-index: 2;
+    box-shadow: 0 0 20px #666;
 }
 
 .caption {
@@ -72,15 +73,15 @@
 }
 
 @keyframes example {
-    from {background-color: #34617F;}
+    from {background-color: #3e4f58;}
     to {background-color: #5A717F;
-        box-shadow: 0 0 20px #5A717F;
+        box-shadow: 0 0 20px #333;
         font-size: 50px;
     }
 }
 
 .caption span.border {
-    background-color: #34617F;
+    background-color: #3e4f58;
     color: #fff;
     padding: 18px;
     font-size: 20px;
@@ -111,4 +112,39 @@ body, html {
     height: 100%;
     padding: 0;
     margin: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #5A717F;
+    box-shadow: 0 0 10px #333;
+    z-index: 6;
+    position: fixed;
+    width: 100%;
+}
+
+.topnav a {
+    float: right;
+    display: block;
+    color: #ffffff;
+    padding: 10px 16px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+@keyframes navAnimation {
+    from{background-color: #5A717F;
+        box-shadow: 0 0 10px #333;}
+    to{background-color: #34617F;
+        box-shadow: none;
+    }
+}
+
+.topnav a:hover {
+    background-color: #bdc6cb;
+    color: #5A717F;
+}
+
+.topnav a.active {
+
 }
