@@ -80,6 +80,23 @@
     }
 }
 
+@keyframes  hover{
+    from {
+        font-size: 50px;
+        background-color: #5A717F;
+        box-shadow: 0 0 20px #333;}
+    to {background-color: #3e4f58;
+        font-size: 20px;
+    }
+}
+
+.caption span.border:hover {
+    animation-name: hover;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
 .caption span.border {
     background-color: #3e4f58;
     color: #fff;
@@ -87,7 +104,7 @@
     font-size: 20px;
     letter-spacing: 10px;
     animation-name: example;
-    animation-duration: 5s;
+    animation-duration: 1s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 }
@@ -120,23 +137,25 @@ body, html {
     box-shadow: 0 0 10px #333;
     z-index: 6;
     position: fixed;
-    width: 100%;
+    width: 0;
 }
 
 .topnav a {
     float: right;
     display: block;
     color: #ffffff;
-    padding: 10px 16px;
+    padding: 0 0;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 17px;
 }
 
-@keyframes navAnimation {
-    from{background-color: #5A717F;
-        box-shadow: 0 0 10px #333;}
-    to{background-color: #34617F;
-        box-shadow: none;
+/* shows the navbar when the width of the screen is more then 768px */
+@media (min-width: 768px){
+    .topnav a {
+        padding: 1vh 2vw;
+    }
+    .topnav {
+        width: 100%;
     }
 }
 
