@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700');
+
+body a,p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    user-select: none;
+}
+
+#home-button {
+    background-color: #FFC80A;
+    border-radius: 50px;
+    padding: 30px 60px;
+    border: 0;
+    letter-spacing: 3px;
+}
+
+#home-button:hover {
+    background-color: #222222;
+    color: #FFC80A;
+}
+
+#home-title {
+    letter-spacing: 4px;
+    font-size: 105px;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    color: #222222;
+    margin-top: 25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.subtext {
+    color: #eeeeee;
+    font-size: 24px;
+}
+
+.info {
+    left: 10%;
+    top: 37%;
+    width: 90%;
+    text-align: left;
+    position: relative;
+}
+
+#logo {
+    margin-top: 28px;
+    margin-left: 48px;
+    font-size: 39px;
+}
+
+span.logo-first {
+    color: #eeeeee;
+    font-weight: 700;
+}
+
+span.logo-second {
+    color: #222222;
+    font-weight: 700;
+}
+
+.photo {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#home {
+    background:
+            linear-gradient(
+                    rgba(22,22,22, 0.35),
+                    rgba(22,22,22,0.35)
+            ),
+            url("https://images.unsplash.com/photo-1495511623436-ba44aaee07cf?");
+
+    height: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    z-index: 6;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(22, 22, 22, 0.15);
+}
+
+.list a {
+    letter-spacing: 2px;
+    margin: 42px 48px;
+    float: right;
+    display: block;
+    color: #eeeeee;
+    font-size: 18px;
+}
+
+.list a:hover {
+    color: #222222;
+}
