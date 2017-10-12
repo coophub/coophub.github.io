@@ -13,3 +13,5 @@ less time doing so.
 * 300006243 | Lucas Anderson
 * 300015520 | Benoît Jeaurond
 * 300008344 | Diedrick Ngendahayo
+
+This design is based off of uzer.ca It is meant to be a single page that scrolls and contains all of the information.
