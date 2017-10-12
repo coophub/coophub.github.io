@@ -1,0 +1,30 @@
+Overall Look and Feel of Roomie
+===============================
+
+The website will feature a main page and only a main page which will contain everything the user would need to know
+about. This approach allows for maximum engagement as users would only have to scroll and would not have to wait for the
+page to refresh.
+
+Colours
+========
+Coophub should look professional and feel like a workplace.
+
+- #222222 (variant of some sort)
+- #eeeeee (variant of some sort)
+
+Iconography
+===========
+We will focus on using icons that have a 'flat' design, which adheres to the overall look and feel.
+When selecting an icon, please select the correct icon for the job and keep the following in mind:
+
+Typography
+==========
+We will be using Roboto from Google Fonts.
+
+Links
+=====
+Links will not be underlined and should change color when a user hovers over it.
+
+Buttons
+=======
+Buttons will be flat designed using the chosen colors outlined above.
