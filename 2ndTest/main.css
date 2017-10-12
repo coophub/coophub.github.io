@@ -106,7 +106,7 @@ body, html {
     background-color: rgba(22, 22, 22, 0.15);
 }
 
-.list a {
+#list a {
     letter-spacing: 2px;
     margin: 42px 48px;
     float: right;
@@ -115,6 +115,10 @@ body, html {
     font-size: 18px;
 }
 
-.list a:hover {
+#list a:hover {
     color: #222222;
+}
+a.active{
+  font-weight: bold;
+
 }
