@@ -55,3 +55,15 @@ body{
     color: #DDD;
     font-size: 15px;
 }
+.navbar a {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    float: right;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.navbar a:hover {
+    color: grey;
+}
