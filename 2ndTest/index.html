@@ -31,6 +31,22 @@ $(document).ready(function(){
     } // End if
   });
 });
+
+
+$(document).ready(function(){
+    var scroll_start = 0;
+    var startchange = $('.topnav');
+    var offset = startchange.offset();
+    $(document).scroll(function() {
+        scroll_start = $(this).scrollTop();
+        if(scroll_start > offset.top) {
+            $('.topnav').css('background-color', 'rgba(255, 200, 10, 0.9)');
+        } else {
+            $('.topnav').css('background-color', 'transparent');
+        }
+    });
+});
+
 </script>
 
 </head>
