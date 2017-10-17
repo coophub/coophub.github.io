@@ -12,15 +12,18 @@ body a,p{
 
 #home-button {
     background-color: #FFC80A;
-    border-radius: 50px;
-    padding: 30px 60px;
-    border: 0;
+    border-radius: 20px;
+    padding: 20px 70px;
+    border: 5px solid #FFC80A;
     letter-spacing: 3px;
+    transition-duration: 0.35s;
 }
 
 #home-button:hover {
-    background-color: #222222;
-    color: #FFC80A;
+    background-color: transparent;
+    color: black;
+    transition-duration: 0.35s;
+    border: 5px solid #FFC80A;
 }
 
 #home-title {
@@ -32,7 +35,7 @@ body a,p{
     font-family: 'Montserrat', sans-serif;
     color: #222222;
     margin-top: 25px;
-    font-size: 16px;
+    font-size: 24px;
     font-weight: 600;
     cursor: pointer;
 }
