@@ -118,6 +118,22 @@ body, html {
     transition-duration: 2s;
 }
 
+#listdown a {
+    letter-spacing: 2px;
+    margin: 42px 48px;
+    float: right;
+    display: block;
+    color: #333333;
+    font-size: 18px;
+    transition-duration: 0.3s;
+}
+
+#listdown a:hover {
+    color: #bbbbbb;
+    cursor: pointer;
+    transition-duration: 0.3s;
+}
+
 #list a {
     letter-spacing: 2px;
     margin: 42px 48px;
@@ -125,13 +141,13 @@ body, html {
     display: block;
     color: #eeeeee;
     font-size: 18px;
-    transition-duration: 1s;
+    transition-duration: 0.3s;
 }
 
 #list a:hover {
     color: #222222;
     cursor: pointer;
-    transition-duration: 1s;
+    transition-duration: 0.3s;
 }
 
 a.active{
