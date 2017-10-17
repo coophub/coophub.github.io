@@ -7,6 +7,7 @@ body a,p{
     font-weight: 600;
     text-decoration: none;
     user-select: none;
+    cursor: default;
 }
 
 #home-button {
@@ -33,18 +34,20 @@ body a,p{
     margin-top: 25px;
     font-size: 16px;
     font-weight: 600;
+    cursor: pointer;
 }
 
 .subtext {
     color: #eeeeee;
     font-size: 24px;
+    text-align: center;
 }
 
 .info {
-    left: 10%;
+    left: 5%;
     top: 37%;
     width: 90%;
-    text-align: left;
+    text-align: center;
     position: relative;
 }
 
@@ -104,6 +107,7 @@ body, html {
     position: fixed;
     width: 100%;
     transition-duration: 2s;
+    cursor: pointer;
 }
 
 #list a {
@@ -117,9 +121,9 @@ body, html {
 
 #list a:hover {
     color: #222222;
+    cursor: pointer;
 }
 
 a.active{
   font-weight: bold;
-
 }
