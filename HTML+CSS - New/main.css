@@ -131,6 +131,8 @@ body, html {
 #listdown a:hover {
     color: #bbbbbb;
     cursor: pointer;
+    margin-top: 39px;
+    font-size: 22px;
     transition-duration: 0.3s;
 }
 
@@ -147,6 +149,8 @@ body, html {
 #list a:hover {
     color: #222222;
     cursor: pointer;
+    margin-top: 39px;
+    font-size: 22px;
     transition-duration: 0.3s;
 }
 
