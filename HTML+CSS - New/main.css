@@ -17,6 +17,7 @@ body a,p{
     border: 5px solid #FFC80A;
     letter-spacing: 3px;
     transition-duration: 0.35s;
+    outline: none;
 }
 
 #home-button:hover {
@@ -58,6 +59,11 @@ body a,p{
     margin-top: 28px;
     margin-left: 48px;
     font-size: 39px;
+}
+
+#logo-link span {
+    transition-duration: 2s;
+    color: transparent;
 }
 
 span.logo-first {
@@ -110,7 +116,6 @@ body, html {
     position: fixed;
     width: 100%;
     transition-duration: 2s;
-    cursor: pointer;
 }
 
 #list a {
@@ -120,11 +125,13 @@ body, html {
     display: block;
     color: #eeeeee;
     font-size: 18px;
+    transition-duration: 1s;
 }
 
 #list a:hover {
     color: #222222;
     cursor: pointer;
+    transition-duration: 1s;
 }
 
 a.active{

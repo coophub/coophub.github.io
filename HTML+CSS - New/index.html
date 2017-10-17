@@ -40,9 +40,15 @@ $(document).ready(function(){
     $(document).scroll(function() {
         scroll_start = $(this).scrollTop();
         if(scroll_start > offset.top) {
-            $('.topnav').css('background-color', 'rgba(255, 200, 10, 0.9)');
+            $('.topnav').css('background-color', 'rgba(238, 238, 238, 0.9)');
+            $('.topnav #list a').css('color', 'rgb(34, 34, 34)');
+            $('#logo-link span').css('color', 'rgb(34, 34, 34)');
+            $('#logo-link span').css('cursor', 'pointer');
         } else {
             $('.topnav').css('background-color', 'transparent');
+            $('.topnav #list a').css('color', 'rgb(238, 238, 238)');
+            $('#logo-link span').css('color', 'transparent');
+            $('#logo-link span').css('cursor', 'default');
         }
     });
 });
