@@ -55,9 +55,10 @@ body a,p{
 }
 
 #logo {
-    margin-top: 28px;
-    margin-left: 48px;
+    padding: 28px 48px;
     font-size: 39px;
+    display: inline-block;
+    float: left;
 }
 
 span.logo-first {
@@ -109,22 +110,34 @@ body, html {
     z-index: 6;
     position: fixed;
     width: 100%;
-    transition-duration: 2s;
+    transition-duration: 1s;
     cursor: pointer;
+}
+
+#list {
+    float: right;
+    padding-right: 20px;
 }
 
 #list a {
     letter-spacing: 2px;
-    margin: 42px 48px;
-    float: right;
-    display: block;
+    display: inline-block;
     color: #eeeeee;
-    font-size: 18px;
+    font-size: 14px;
+    padding: 3em 0.5em;
+    transition-duration: 0.25s;
+    transform-origin: center;
+    -webkit-transform-origin: center;
 }
 
 #list a:hover {
-    color: #222222;
+    color: #eeeeee;
     cursor: pointer;
+    font-size: 16px;
+    padding: 2.5em 0.6em;
+    transform-origin: center;
+    font-weight: 900;
+    -webkit-transform-origin: center;
 }
 
 a.active{
