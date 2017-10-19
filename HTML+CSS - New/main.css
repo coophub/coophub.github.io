@@ -56,9 +56,14 @@ body a,p{
 }
 
 #logo {
-    margin-top: 28px;
-    margin-left: 48px;
+    padding: 28px 48px;
     font-size: 39px;
+    display: inline-block;
+    float: left;
+}
+
+#logo-link {
+    cursor: pointer;
 }
 
 #logo-link span {
@@ -136,22 +141,27 @@ body, html {
     transition-duration: 0.3s;
 }
 
+#list {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+}
+
 #list a {
     letter-spacing: 2px;
-    margin: 42px 48px;
-    float: right;
-    display: block;
+    display: inline-block;
     color: #eeeeee;
-    font-size: 18px;
-    transition-duration: 0.3s;
+    font-size: 14px;
+    padding: 3em 0.5em;
+    transition-duration: 0.25s;
 }
 
 #list a:hover {
-    color: #222222;
+    color: #eeeeee;
     cursor: pointer;
-    margin-top: 39px;
-    font-size: 22px;
-    transition-duration: 0.3s;
+    font-size: 16px;
+    padding: 2.5em 0.6em;
+    font-weight: 900;
 }
 
 a.active{
