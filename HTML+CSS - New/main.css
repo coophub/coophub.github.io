@@ -125,23 +125,28 @@ body, html {
 
 #listdown a {
     letter-spacing: 2px;
-    margin: 42px 48px;
-    float: right;
-    display: block;
+    padding: 3em 0.5em;
+    display: inline-block;
     color: #333333;
-    font-size: 18px;
-    transition-duration: 0.3s;
+    font-size: 14px;
+    transition-duration: 0.25s;
 }
 
 #listdown a:hover {
     color: #bbbbbb;
     cursor: pointer;
-    margin-top: 39px;
-    font-size: 22px;
-    transition-duration: 0.3s;
+    padding: 2.5em 0.6em;
+    font-size: 16px;
+    transition-duration: 0.25s;
 }
 
 #list {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+}
+
+#listdown {
     display: inline-block;
     position: absolute;
     right: 20px;
