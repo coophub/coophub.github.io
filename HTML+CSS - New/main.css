@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
 
 body a,p{
     margin: 0;
@@ -8,6 +8,17 @@ body a,p{
     text-decoration: none;
     user-select: none;
     cursor: default;
+}
+
+div {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
 }
 
 #home-button {
@@ -56,19 +67,34 @@ body a,p{
 }
 
 #logo {
-    padding: 28px 48px;
-    font-size: 39px;
-    display: inline-block;
+    padding: 1.25em 3em;
     float: left;
+    transition-duration: 0.3s;
 }
 
 #logo-link {
+    float:left;
+    color: transparent;
+    font-size: 2.4375em;
+    cursor: default;
+    transition-duration: 0.3s;
+}
+
+#logo-link-down {
+    float:left;
+    transition-duration: 0.3s;
+    font-size: 2.4375em;
+    color: rgb(34, 34, 34);
     cursor: pointer;
 }
 
-#logo-link span {
-    transition-duration: 2s;
-    color: transparent;
+#logo-link-down:hover {
+    float:left;
+    color: #FFC80A;
+    font-weight: 700;
+    transition-duration: 0.3s;
+    transform: scale(1.07, 1.07);
+    transition-timing-function: ease;
 }
 
 span.logo-first {
@@ -88,6 +114,13 @@ span.logo-second {
     position: relative;
 }
 
+.color {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
 #home {
     background:
             linear-gradient(
@@ -95,24 +128,11 @@ span.logo-second {
                     rgba(22,22,22,0.35)
             ),
             url("https://images.unsplash.com/photo-1495511623436-ba44aaee07cf?");
-
-    height: 100%;
-    background-repeat:no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
-
-div {
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-    margin-left: 0px;
-    margin-top: 0px;
-}
-
-body, html {
     height: 100%;
-    padding: 0;
-    margin: 0;
+    background-attachment: fixed;
 }
 
 .topnav {
@@ -123,52 +143,50 @@ body, html {
     transition-duration: 2s;
 }
 
+#listdown {
+    display: inline-block;
+    position: absolute;
+    right: 2.3em;
+}
+
 #listdown a {
     letter-spacing: 2px;
-    padding: 3em 0.5em;
+    padding: 2.25em 0.7em;
     display: inline-block;
     color: #333333;
-    font-size: 14px;
+    font-size: 1em;
     transition-duration: 0.25s;
 }
 
 #listdown a:hover {
-    color: #bbbbbb;
+    color: #FFC80A;
     cursor: pointer;
-    padding: 2.5em 0.6em;
-    font-size: 16px;
+    font-weight: 900;
+    transform: scale(1.2, 1.2);
     transition-duration: 0.25s;
+    transition-timing-function: ease;
 }
 
 #list {
     display: inline-block;
     position: absolute;
-    right: 20px;
-}
-
-#listdown {
-    display: inline-block;
-    position: absolute;
-    right: 20px;
+    right: 2.3em;
 }
 
 #list a {
     letter-spacing: 2px;
     display: inline-block;
     color: #eeeeee;
-    font-size: 14px;
-    padding: 3em 0.5em;
+    font-size: 1em;
+    padding: 2.25em 0.7em;
     transition-duration: 0.25s;
 }
 
 #list a:hover {
-    color: #eeeeee;
+    color: #FFC80A;
     cursor: pointer;
-    font-size: 16px;
-    padding: 2.5em 0.6em;
     font-weight: 900;
-}
-
-a.active{
-  font-weight: bold;
+    transform: scale(1.2, 1.2);
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
 }

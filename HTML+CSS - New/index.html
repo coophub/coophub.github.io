@@ -33,25 +33,51 @@ $(document).ready(function(){
 });
 
 
-$(document).ready(function(){
-    var scroll_start = 0;
-    var startchange = $('.topnav');
-    var offset = startchange.offset();
-    $(document).scroll(function() {
-        scroll_start = $(this).scrollTop();
-        if(scroll_start > offset.top) {
-            $('.topnav').css('background-color', 'rgba(238, 238, 238, 0.9)');
-            $('#logo-link span').css('color', 'rgb(34, 34, 34)');
-            $('#logo-link span').css('cursor', 'pointer');
-            $('#list').attr('id', 'listdown');
-        } else {
-            $('.topnav').css('background-color', 'transparent');
-            $('#logo-link span').css('color', 'transparent');
-            $('#logo-link span').css('cursor', 'default');
-            $('#listdown').attr('id', 'list');
-        }
-    });
-});
+$(document).ready(
+    function(){
+        var scroll_start = 0;
+        var startchange = $('#home-button');
+        var offset = startchange.offset();
+        $(document).scroll(
+            function() {
+                scroll_start = $(this).scrollTop();
+                if(scroll_start > offset.top) {
+                    $('.topnav').css('background-color', 'rgba(238, 238, 238, 0.9)');
+                    $('#logo-link').attr('id', 'logo-link-down');
+                    $('#list').attr('id', 'listdown');
+                } else {
+                    $('.topnav').css('background-color', 'transparent');
+                    $('#logo-link-down').attr('id', 'logo-link');
+                    $('#listdown').attr('id', 'list');
+                }
+            }
+        );
+    }
+);
+
+/*
+$(document).ready(
+    function smoothScroll (duration) {
+        $('#list a').on('click', function(event) {
+
+            $("#list a").css('color', '#333333');
+            $("#list a").css('transform', 'none');
+            $("#list a").css('font-weight', '600');
+
+            $(this).css('color', '#FFC80A');
+            $(this).css('font-weight', '900');
+            $(this).css('transform', 'scale(1.2, 1.2)');
+
+            if( target.length ) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, duration);
+            }
+        });
+    }
+)
+*/
 </script>
 
 </head>
@@ -59,19 +85,17 @@ $(document).ready(function(){
 
     <div class="topnav" data-animation="flipInX" data-timeout="400">
         <div id="list">
-            <a href="#home" >HOME</a>
-            <a href="#about" >ABOUT</a>
-            <a href="#features" >FEATURES</a>
-            <a href="#team" >TEAM</a>
-            <a href="#pricing" >PRICING</a>
-            <a href="#contact" class="active">CONTACT</a>
+            <a href="#home" class="topnav-link">HOME</a>
+            <a href="#about" class="topnav-link">ABOUT</a>
+            <a href="#features" class="topnav-link">FEATURES</a>
+            <a href="#team" class="topnav-link">TEAM</a>
+            <a href="#pricing" class="topnav-link">PRICING</a>
+            <a href="#contact" class="topnav-link">CONTACT</a>
           </ul>
         </div>
 
         <div id="logo">
-            <a id="logo-link" href="#home">
-                <span class="logo-first">COOP</span><span class="logo-second">HUB</span>
-            </a>
+            <a id="logo-link" href="#home">COOPHUB</a>
         </div>
     </div>
 
