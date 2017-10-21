@@ -55,7 +55,7 @@ $(document).ready(
     }
 );
 
-/* This code is to make the clicked navbar link stay big (but it doesn't work well...)
+/*This code is to make the clicked navbar link stay big (but it doesn't work well...)
 $(document).ready(
     function smoothScroll (duration) {
         $('#list a').on('click', function(event) {
@@ -91,7 +91,6 @@ $(document).ready(
             <a href="#team" class="topnav-link">TEAM</a>
             <a href="#pricing" class="topnav-link">PRICING</a>
             <a href="#contact" class="topnav-link">CONTACT</a>
-          </ul>
         </div>
 
         <div id="logo">
@@ -130,7 +129,24 @@ $(document).ready(
     </div>
 
     <div class="color" id="contact">
-
+        <div id="info">
+            <p id="contact-title">Contact Us</p>
+            <p class="contact-info">Address</p>
+            <p class="contact-info">123 456-7890</p>
+            <p class="contact-info">email@email.com</p>
+            <p id="contact-or">OR:</p>
+        </div>
+        <div id="contact-form">
+            <h1 id="contact-name">Name</h1>
+            <input id="contact-name-box" />
+            <h1 id="contact-email">Email</h1>
+            <input id="contact-email-box" />
+            <h1 id="contact-company">Company</h1>
+            <input id="contact-company-box" />
+            <h1 id="contact-message">Message</h1>
+            <input id="contact-message-box" />
+            <button id="contact-button">SEND</button>
+        </div>
     </div>
 </body>
 </html>
