@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+
+body a,p{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    user-select: none;
+    cursor: default;
+}
+
+div {
+    margin-left: 0;
+    margin-top: 0;
+}
+
+body, html {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+#home-button {
+    background-color: #FFC80A;
+    border-radius: 20px;
+    padding: 20px 70px;
+    border: 5px solid #FFC80A;
+    letter-spacing: 3px;
+    transition-duration: 0.35s;
+    outline: none;
+}
+
+#home-button:hover {
+    background-color: transparent;
+    color: black;
+    transition-duration: 0.35s;
+    border: 5px solid #FFC80A;
+}
+
+#home-title {
+    letter-spacing: 4px;
+    font-size: 105px;
+}
+
+.button {
+    font-family: 'Montserrat', sans-serif;
+    color: #222222;
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.subtext {
+    color: #eeeeee;
+    font-size: 24px;
+    text-align: center;
+}
+
+.info {
+    left: 5%;
+    top: 37%;
+    width: 90%;
+    text-align: center;
+    position: relative;
+}
+
+#logo {
+    padding: 1.25em 3em;
+    float: left;
+    transition-duration: 0.3s;
+}
+
+#logo-link {
+    float:left;
+    color: transparent;
+    font-size: 2.4375em;
+    cursor: default;
+    transition-duration: 0.3s;
+}
+
+#logo-link-down {
+    float:left;
+    transition-duration: 0.3s;
+    font-size: 2.4375em;
+    color: rgb(34, 34, 34);
+    cursor: pointer;
+}
+
+#logo-link-down:hover {
+    float:left;
+    color: #FFC80A;
+    font-weight: 700;
+    transition-duration: 0.3s;
+    transform: scale(1.07, 1.07);
+    transition-timing-function: ease;
+}
+
+span.logo-first {
+    color: #eeeeee;
+    font-weight: 700;
+}
+
+span.logo-second {
+    color: #222222;
+    font-weight: 700;
+}
+
+.photo {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.color {
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+#home {
+    background:
+            linear-gradient(
+                    rgba(22,22,22, 0.35),
+                    rgba(22,22,22,0.35)
+            ),
+            url("https://images.unsplash.com/photo-1495511623436-ba44aaee07cf?");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    background-attachment: fixed;
+}
+
+.topnav {
+    overflow: hidden;
+    z-index: 6;
+    position: fixed;
+    width: 100%;
+    transition-duration: 2s;
+}
+#about {
+  text-align:center;
+  border-color: black;
+  border-radius: 10px;
+  font-family: 'Montserrat';
+  font-size: 15px;
+
+}
+.Read-button{
+  background-color: #FFC80A;
+  border-radius: 20px;
+  padding: 20px 70px;
+  border: 5px solid #FFC80A;
+  letter-spacing: 3px;
+  transition-duration: 0.35s;
+  outline: none;
+  cursor: pointer;
+
+}
+.Read-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+.panel{
+  display: none;
+}
+.Read-button span:after{
+  content: '\25bc';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  bottom: : -20px;
+  transition: 0.5s;
+}
+.Read-button:hover {
+  background-color: transparent;
+  color: black;
+  transition-duration: 0.35s;
+  border: 5px solid #FFC80A;
+}
+.Read-button.active{
+
+}
+.Read-button:hover span {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+.Read-button:hover span:after {
+  opacity: 1;
+  bottom: : 0;
+}
+
+#listdown {
+    display: inline-block;
+    position: absolute;
+    right: 2.3em;
+}
+
+#listdown a {
+    letter-spacing: 2px;
+    padding: 2.25em 0.7em;
+    display: inline-block;
+    color: #333333;
+    font-size: 1em;
+    transition-duration: 0.25s;
+}
+
+#listdown a:hover {
+    color: #FFC80A;
+    cursor: pointer;
+    font-weight: 900;
+    transform: scale(1.2, 1.2);
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
+
+#list {
+    display: inline-block;
+    position: absolute;
+    right: 2.3em;
+}
+
+#list a {
+    letter-spacing: 2px;
+    display: inline-block;
+    color: #eeeeee;
+    font-size: 1em;
+    padding: 2.25em 0.7em;
+    transition-duration: 0.25s;
+}
+
+#list a:hover {
+    color: #FFC80A;
+    cursor: pointer;
+    font-weight: 900;
+    transform: scale(1.2, 1.2);
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
+}
