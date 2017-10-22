@@ -340,6 +340,7 @@ button.pricing-block-button {
     text-transform: uppercase;
     letter-spacing: 1px;
     transition-duration: 0.2s;
+    outline: none;
 }
 
 button.pricing-block-button:hover {
