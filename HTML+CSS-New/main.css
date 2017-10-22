@@ -148,7 +148,8 @@ span.logo-second {
   border-radius: 10px;
   font-family: 'Montserrat';
   font-size: 15px;
-
+  background-image: : url('https://images.pexels.com/photos/358627/pexels-photo-358627.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb');
+  background-attachment: fixed;
 }
 .Read-button{
   background-color: #FFC80A;
