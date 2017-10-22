@@ -10,7 +10,8 @@ body a,p,ul,li,sub,sup{
     cursor: default;
 }
 
-div {
+section,
+div{
     margin-left: 0;
     margin-top: 0;
 }
@@ -64,78 +65,6 @@ body, html {
     width: 90%;
     text-align: center;
     position: relative;
-}
-#about {
-  text-align: center;
-  color: White;
-  font-family: 'Montserrat';
-  font-size: 25px;
-  background:
-          linear-gradient(
-                  rgba(22,22,22, 0.35),
-                  rgba(22,22,22,0.35)
-          ),
-          url("https://images.pexels.com/photos/358627/pexels-photo-358627.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb");
-
-}
-.Read-button{
-  font-size: 24px;
-  background-color: #FFC80A;
-  border-radius: 20px;
-  padding: 20px 70px;
-  border: 5px solid #FFC80A;
-  letter-spacing: 3px;
-  transition-duration: 0.35s;
-  outline: none;
-  cursor: pointer;
-
-}
-.Read-button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-.panel{
-  font-size: 24px;
-  position: relative;
-  max-height: 140px;
-  overflow: hidden;
-  -webkit-transition: max-height 1s ease;
-  transition: max-height 1s ease;
-}
-.Read-button:hover {
-  background-color: transparent;
-  color: black;
-  transition-duration: 0.35s;
-  border: 5px solid #FFC80A;
-}
-.Read-button.active{
-}
-.Read-button:hover span {
-  padding-left: 25px;
-  padding-right: 25px;
-}
-.Read-button span:after{
-  position: absolute;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-  
-}
-
-
-.panel.-expanded{
-  max-height: 100vh;
-}
-.panel:not(.-expanded)::after{
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), white);
-  background: linear-gradient(rgba(255, 255, 255, 0), white);
 }
 
 #logo {
@@ -254,8 +183,10 @@ span.logo-second {
     transition-duration: 0.25s;
 }
 
-#list a:hover {
-    color: #FFC80A;
+#list a:hover,
+.active
+{
+    color: #FFC80A !important;
     cursor: pointer;
     font-weight: 900;
     transform: scale(1.2, 1.2);

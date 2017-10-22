@@ -38,6 +38,12 @@ $(document).ready(
         var scroll_start = 0;
         var startchange = $('#home-button');
         var offset = startchange.offset();
+
+        if ($(this).scrollTop() > offset.top) {
+            $('.topnav').css('background-color', 'rgba(238, 238, 238, 0.9)');
+            $('#logo-link').attr('id', 'logo-link-down');
+            $('#list').attr('id', 'listdown');
+        }
         $(document).scroll(
             function() {
                 scroll_start = $(this).scrollTop();
@@ -54,6 +60,28 @@ $(document).ready(
         );
     }
 );
+
+$(window).scroll(function() {
+    var windscroll = $(window).scrollTop();
+    var navheight = $('.topnav').height();
+    if (windscroll >= navheight) {
+        $('section').each(function(i) {
+            if ($(this).position().top <= windscroll - 100) {
+                $('nav a.active').removeClass('active');
+                $('nav a').eq(i).addClass('active');
+            }
+        });
+
+    } else {
+
+        $('nav').removeClass('fixed');
+        $('nav a.active').removeClass('active');
+        $('nav a:first').addClass('active');
+    }
+
+}).scroll();
+
+
 
 /*This code is to make the clicked navbar link stay big (but it doesn't work well...)
 $(document).ready(
@@ -83,143 +111,113 @@ $(document).ready(
 </head>
 <body>
 
-    <div class="topnav" data-animation="flipInX" data-timeout="400">
-        <div id="list">
+    <nav class="topnav" data-animation="flipInX" data-timeout="400">
+        <nav id="list">
             <a href="#home" class="topnav-link">HOME</a>
             <a href="#about" class="topnav-link">ABOUT</a>
             <a href="#features" class="topnav-link">FEATURES</a>
             <a href="#team" class="topnav-link">TEAM</a>
             <a href="#pricing" class="topnav-link">PRICING</a>
             <a href="#contact" class="topnav-link">CONTACT</a>
-        </div>
+        </nav>
 
         <div id="logo">
             <a id="logo-link" href="#home">COOPHUB</a>
         </div>
-    </div>
+    </nav>
 
-    <div class="photo" id="home">
-        <div class="info">
-            <p id="home-title">
-                <span class="logo-first">COOP</span><span class="logo-second">HUB</span>
-            </p>
-            <p class="subtext">
-                Centralized platform for employers and students to connect.
-            </p>
-            <a href="#contact">
-                <button class="button" id="home-button">REGISTER</button>
-            </a>
-        </div>
-    </div>
-
-    <div class="photo" id="about">
-      <br>
-      <br>
-      <br>
-      <br>
-      <h1>About CoopHub</h1>
-
-
-      <div class = "panel">
-        <pre > <!-- pre is tag that going to respect the structure of the paragraph without any break(br) -->
-We help by being a middle man between a company and the university, by being
-a universal hub for employers to post jobs to schools individualized coop navigators
-using a single portal.
-This streamlines the hiring process by letting employers choose multiple schools at once
-and so they do not have to learn the mulitple complicated portals while having no loss in
-exposure for the job offering, allowing the employer to employ the best employees and spend
-less time doing so.
-        </pre>
-      </div>
-      <button class = "Read-button"><span>Read more</span></button>
-   </div>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script>
-        $('.Read-button').on('click', function(){
-          $('.panel').toggleClass('-expanded');
-
-          if ($('.panel').hasClass('-expanded')) {
-            $('.Read-button').html('Collapse');
-          } else {
-            $('.Read-button').html('Read more');
-          }
-        });
-    </script>
-
-
-
-    <div class="photo" id="features">
-
-    </div>
-
-    <div class="photo" id="team">
-
-    </div>
-
-    <div class="photo" id="pricing">
-        <p id="pricing-title">Pricing Table</p>
-        <p id="pricing-description">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id faucibus elit.
-            Nulla efficitur turpis quis convallis interdum. Aenean magna augue, auctor at eros ut,
-            luctus faucibus erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        </p>
-        <div id="pricing-block">
-            <div id="pricing-block1">
-                <p class="pricing-block-title">Universities</p>
-                <p class="pricing-block-price">
-                    <sup class="pricing-block-price-dollar">$</sup><span class="pricing-block-price-amount">9.99</span><sub  class="pricing-block-price-division">/ student</sub>
+        <section class="photo" id="home">
+            <div class="info">
+                <p id="home-title">
+                    <span class="logo-first">COOP</span><span class="logo-second">HUB</span>
                 </p>
-                <p class="pricing-block-features">
+                <p class="subtext">
+                    Centralized platform for employers and students to connect.
+                </p>
+                <a href="#contact">
+                    <button class="button" id="home-button">REGISTER</button>
+                </a>
+            </div>
+        </section>
+
+        <section class="photo" id="about">
+
+        </section>
+
+        <section class="photo" id="features">
+
+        </section>
+
+        <section class="photo" id="team">
+
+        </section>
+
+        <section class="photo" id="pricing">
+            <p id="pricing-title">Pricing Table</p>
+            <p id="pricing-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed id faucibus elit.
+                Nulla efficitur turpis quis convallis interdum. Aenean magna augue, auctor at eros ut,
+                luctus faucibus erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+            <div id="pricing-block">
+                <div id="pricing-block1">
+                    <p class="pricing-block-title">Universities</p>
+                    <p class="pricing-block-price">
+                        <sup class="pricing-block-price-dollar">$</sup><span class="pricing-block-price-amount">9.99</span><sub  class="pricing-block-price-division">/ student</sub>
+                    </p>
+                    <p class="pricing-block-features">
+                        <ul class="pricing-block-features-list">
+                            <li>one coop session</li>
+                            <li>resume builder</li>
+                            <li>advanced tools</li>
+                        </ul>
+                    </p>
+                    <a href="#contact">
+                        <button class="pricing-block-button">Contact us</button>
+                    </a>
+                </div>
+                <div id="pricing-block2">
+                    <p class="pricing-block-title">Coporations</p>
+                    <p class="pricing-block-price">
+                        <sup class="pricing-block-price-dollar">$</sup><span class="pricing-block-price-amount">9.99</span><sub class="pricing-block-price-division">/ placement</sub>
+                    </p>
+                    <p class="pricing-block-features">
                     <ul class="pricing-block-features-list">
-                        <li>one coop session</li>
-                        <li>resume builder</li>
+                        <li>streamlined hiring process</li>
+                        <li>schedule and interview</li>
                         <li>advanced tools</li>
                     </ul>
-                </p>
-                <a href="#contact">
-                    <button class="pricing-block-button">Contact us</button>
-                </a>
+                    </p>
+                    <a href="#contact">
+                        <button class="pricing-block-button">Contact us</button>
+                    </a>
+                </div>
             </div>
-            <div id="pricing-block2">
-                <p class="pricing-block-title">Coporations</p>
-                <p class="pricing-block-price">
-                    <sup class="pricing-block-price-dollar">$</sup><span class="pricing-block-price-amount">9.99</span><sub class="pricing-block-price-division">/ placement</sub>
-                </p>
-                <p class="pricing-block-features">
-                <ul class="pricing-block-features-list">
-                    <li>streamlined hiring process</li>
-                    <li>schedule and interview</li>
-                    <li>advanced tools</li>
-                </ul>
-                </p>
-                <a href="#contact">
-                    <button class="pricing-block-button">Contact us</button>
-                </a>
-            </div>
-        </div>
-        <div id="pricing-block-line"></div>
-    </div>
+            <div id="pricing-block-line"></div>
+        </section>
 
-    <div class="color" id="contact">
-        <div id="info">
-            <p id="contact-title">Contact Us</p>
-            <p class="contact-info">Address</p>
-            <p class="contact-info">123 456-7890</p>
-            <p class="contact-info">email@email.com</p>
-            <p id="contact-or">OR:</p>
-        </div>
-        <div id="contact-form">
-            <h1 id="contact-name">Name</h1>
-            <input id="contact-name-box" />
-            <h1 id="contact-email">Email</h1>
-            <input id="contact-email-box" />
-            <h1 id="contact-company">Company</h1>
-            <input id="contact-company-box" />
-            <h1 id="contact-message">Message</h1>
-            <input id="contact-message-box" />
-            <button id="contact-button">SEND</button>
-        </div>
-    </div>
+        <section class="color" id="contact">
+            <div id="info">
+                <p id="contact-title">Contact Us</p>
+                <p class="contact-info">Address</p>
+                <p class="contact-info">123 456-7890</p>
+                <p class="contact-info">email@email.com</p>
+                <p id="contact-or">OR:</p>
+            </div>
+            <div id="contact-form">
+                <h1 id="contact-name">Name</h1>
+                <input id="contact-name-box" />
+                <h1 id="contact-email">Email</h1>
+                <input id="contact-email-box" />
+                <h1 id="contact-company">Company</h1>
+                <input id="contact-company-box" />
+                <h1 id="contact-message">Message</h1>
+                <input id="contact-message-box" />
+                <button id="contact-button">SEND</button>
+            </div>
+        </section>
+
+
     <footer>
         <div id="footer-social">
             <a href="https://facebook.com" class="fa fa-facebook"></a>
