@@ -168,7 +168,12 @@ span.logo-second {
   transition: 0.5s;
 }
 .panel{
-  display: none;
+
+  position: relative;
+  max-height: 100px;
+  overflow: hidden;
+  -webkit-transition: max-height 1s ease;
+  transition: max-height 1s ease;
 }
 .Read-button span:after{
   content: '\25bc';
@@ -194,6 +199,19 @@ span.logo-second {
 .Read-button:hover span:after {
   opacity: 1;
   bottom: : 0;
+}
+.panel.-expanded{
+  max-height: 100vh;
+}
+.panel:not(.-expanded)::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: -webkit-linear-gradient(rgba(255, 255, 255, 0), white);
+  background: linear-gradient(rgba(255, 255, 255, 0), white);
 }
 
 #listdown {

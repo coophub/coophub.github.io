@@ -119,36 +119,34 @@ $(document).ready(
       <br>
       <h3>About CoopHub</h3>
       <br>
-      <pre > <!-- pre is tag that going to respect the structure of the paragraph without any break(br) -->
-          We help by being a middle man between a company and the university, by being a universal hub for employers to
-          post jobs to schools individualized coop navigators using a single portal.
-          This streamlines the hiring process by letting employers choose multiple schools at once and so they do not have
-          to learn the mulitple complicated portals while having no loss in exposure for the job offering, allowing the employer
-          to employ the best employees and spend less time doing so.
-      </pre>
-      <button class = "Read-button"><span>Read more</span></button>
-      <div class = "panel">
-       <pre> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
-             magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-             consequat.
-        </pre>
-      </div>
-   </div>
-  <script>
-    var acc = document.getElementsByClassName("Read-button");
-    var i;
 
-    for (i = 0; i < acc.length; i++) {
-        acc[i].onclick = function(){
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
-        }
-    }
+      <div class = "panel">
+        <pre > <!-- pre is tag that going to respect the structure of the paragraph without any break(br) -->
+            We help by being a middle man between a company and the university, by being a universal hub for employers to
+            post jobs to schools individualized coop navigators using a single portal.
+            This streamlines the hiring process by letting employers choose multiple schools at once and so they do not have
+            to learn the mulitple complicated portals while having no loss in exposure for the job offering, allowing the employer
+            to employ the best employees and spend less time doing so.
+         </pre>
+        <pre>
+         Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+         magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat.
+         </pre>
+      </div>
+      <button class = "Read-button"><span>Read more</span></button>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+        $('.Read-button').on('click', function(){
+          $('.panel').toggleClass('-expanded');
+
+          if ($('.panel').hasClass('-expanded')) {
+            $('.Read-button').html('Collapse');
+          } else {
+            $('.Read-button').html('Read More');
+          }
+        });
     </script>
 
     <div class="photo" id="features">
