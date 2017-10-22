@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
 
-body a,p{
+body a,p,ul,li,sub,sup{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -67,7 +67,7 @@ body, html {
 }
 
 #logo {
-    padding: 1.25em 3em;
+    padding: 0.85em 3em;
     float: left;
     transition-duration: 0.3s;
 }
@@ -151,7 +151,7 @@ span.logo-second {
 
 #listdown a {
     letter-spacing: 2px;
-    padding: 2.25em 0.7em;
+    padding: 1.8em 0.7em;
     display: inline-block;
     color: #333333;
     font-size: 1em;
@@ -178,7 +178,7 @@ span.logo-second {
     display: inline-block;
     color: #eeeeee;
     font-size: 1em;
-    padding: 2.25em 0.7em;
+    padding: 1.8em 0.7em;
     transition-duration: 0.25s;
 }
 
@@ -235,18 +235,16 @@ p#pricing-description {
     display:flex;
     justify-content: center;
     height:50%;
-    width: 70%;
-    margin-left: 15%;
-    margin-top: 5%;
+    width: 37em;
     z-index: 3;
     border-radius: 10px;
+    margin: 5% auto;
 }
-
 
 #pricing-block1 {
     z-index: 4;
-    display: flex;
     justify-content: center;
+    text-align: center;
     width: 50%;
     background-color: rgba(238, 238, 238, 0.9);
     border-top-left-radius: 10px;
@@ -263,10 +261,9 @@ p#pricing-description {
     box-shadow: 0 0 200px rgba(34, 34, 34, 0.9);
 }
 
-
 #pricing-block2 {
     z-index: 4;
-    display: flex;
+    text-align: center;
     justify-content: center;
     width: 50%;
     background-color: rgba(238, 238, 238, 0.9);
@@ -282,4 +279,73 @@ p#pricing-description {
     border-radius: 10px;
     transform: scale(1.1, 1.1);
     box-shadow: 0 0 200px rgba(34, 34, 34, 0.9);
+}
+
+p.pricing-block-title {
+    margin-top: 5em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #777;
+}
+
+ul.pricing-block-features-list {
+    margin-top: 2em;
+    list-style: none;
+    line-height:200%;
+}
+
+
+p.pricing-block-price {
+    padding-top:1em;
+}
+
+span.pricing-block-price-amount {
+    font-size:4.5em;
+    font-weight: 400;
+}
+
+sup.pricing-block-price-dollar {
+    font-size: 100%;
+    vertical-align: 150%;
+    font-weight: 300;
+    color: #777;
+}
+
+sub.pricing-block-price-division {
+    font-size: 70%;
+    vertical-align: 0;
+    font-weight: 400;
+}
+
+button.pricing-block-button {
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 1em 1.2em;
+    margin-top: 2em;
+    border: 2px solid #aaaaaa;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+button.pricing-block-button {
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 1em;
+    padding: 1em 1.2em;
+    margin-top: 2em;
+    border: 2px solid #aaaaaa;
+    background-color: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition-duration: 0.2s;
+}
+
+button.pricing-block-button:hover {
+    transform: scale(1.2,1.2);
+    border: 2px solid #FFC80A;
+    background-color: #FFC80A;
+    color:#eeeeee;
+    transition-duration: 0.2s;
 }
