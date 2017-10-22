@@ -350,3 +350,69 @@ button.pricing-block-button:hover {
     color:#eeeeee;
     transition-duration: 0.2s;
 }
+
+button.pricing-block-button:active {
+    transform: scale(1.2,1.2);
+    border: 2px solid #222222;
+    background-color: #222222;
+    color:#FFC80A;
+    transition-duration: 0.2s;
+}
+
+footer {
+    height: 12%;
+    background-color: #222222;
+}
+
+#footer-social {
+    text-align: center;
+}
+
+.fa {
+    cursor: pointer;
+    align-content: center;
+    padding: 10px;
+    margin: 18px 5px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+    transition-duration: 0.3s;
+    color: #eeeeee;
+    background-color: #444444;
+}
+
+.fa:hover {
+    transition-duration: 0.3s;
+    color: #444444;
+    background-color: #eeeeee;
+    transform: scale(1.2,1.2);
+}
+
+.fa:active {
+    transition-duration: 0.3s;
+    color: #eeeeee;
+    background-color: #FFC80A;
+}
+
+p#copyright {
+    font-size: 90%;
+    color: #eeeeee;
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    transition-duration: 0.3s;
+}
+
+p#copyright:hover {
+    cursor: pointer;
+    color: #FFC80A;
+    transform: scale(1.05,1.05);
+    transition-duration: 0.3s;
+}
+
+#footer-copyright {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
