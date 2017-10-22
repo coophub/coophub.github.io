@@ -190,3 +190,96 @@ span.logo-second {
     transition-duration: 0.25s;
     transition-timing-function: ease;
 }
+
+#pricing {
+    background:
+            linear-gradient(
+                    rgba(22,22,22, 0.35),
+                    rgba(22,22,22,0.35)
+            ),
+            url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40");
+    height: 100%;
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 1;
+    margin:0;
+    padding:0;
+    position: relative;
+}
+
+p#pricing-title{
+    text-transform: uppercase;
+    z-index: 2;
+    text-align: center;
+    font-size: 400%;
+    padding-top: 5%;
+    margin: 0;
+    color: #eeeeee;
+}
+
+p#pricing-description {
+    z-index: 2;
+    color: #eeeeee;
+    text-align: center;
+    padding-top: 2%;
+    width: 50%;
+    margin-left: 25%;
+    font-size: 1.25em;
+    font-weight: 400;
+    line-height: 200%;
+}
+
+#pricing-block {
+    display:flex;
+    justify-content: center;
+    height:50%;
+    width: 70%;
+    margin-left: 15%;
+    margin-top: 5%;
+    z-index: 3;
+    border-radius: 10px;
+}
+
+
+#pricing-block1 {
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: rgba(238, 238, 238, 0.9);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+#pricing-block1:hover {
+    z-index: 5;
+    transition-duration: 0.3s;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0 200px rgba(34, 34, 34, 0.9);
+}
+
+
+#pricing-block2 {
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    background-color: rgba(238, 238, 238, 0.9);
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition-duration: 0.3s;
+}
+
+#pricing-block2:hover {
+    z-index: 5;
+    transition-duration: 0.3s;
+    background-color: #eeeeee;
+    border-radius: 10px;
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 0 200px rgba(34, 34, 34, 0.9);
+}
