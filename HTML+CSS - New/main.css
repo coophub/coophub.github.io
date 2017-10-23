@@ -477,9 +477,7 @@ p#copyright:hover {
   top: 0;
   right: -20px;
   transition: 0.5s;
-
 }
-
 
 .panel.-expanded{
   max-height: 100vh;
@@ -495,19 +493,21 @@ p#copyright:hover {
 }
 
 #team{
-    background-color: #000000
+    background-color: white;
 
 }
 .teamtext{
-    color: #FFF;
+    color: black;
     text-align: center;
 
 }
-.names{
+.teamnames{
     text-align: left;
+    color: black;
+    position: center;
 
 }
-.fancy{
+.teamfancy{
     margin-top: 30px;
     text-align: center;
     left: 50%;
@@ -522,4 +522,9 @@ p#copyright:hover {
 
 #contact-title {
     font-size: 4.5em;
+
+.teamname{
+    display: inline-block;
+    text-align: center;
+    margin-left: 12em;
 }
