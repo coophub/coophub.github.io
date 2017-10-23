@@ -521,7 +521,20 @@ p#copyright:hover {
 }
 
 #contact-title {
-    font-size: 4.5em;
+    font-size: 3.5em;
+    margin-left: 12%;
+    margin-top: 5%;
+}
+
+.contact-info {
+    font-size: 1em;
+    margin-left: 13%;
+}
+
+#contact-form {
+    width: 45%;
+    margin-right: 5%;
+}
 
 .teamname{
     display: inline-block;

@@ -1,0 +1,69 @@
+html{
+    height: 100%;
+    min-height: 100%;
+    display: block;
+}
+
+body{
+    font-family: 'Montserrat SemiBold', Helvetica, Arial, sans-serif;
+    background-color: #F5F5F5;
+    background: url('https://burst.shopifycdn.com/photos/work-journal_925x.jpg') center center no-repeat;
+    background-size: cover;
+    font-size: 15px;
+    height: 100%;
+    min-height: 100%;
+    color: white;
+    padding: 0;
+    margin: 0;
+    position: relative;
+}
+
+.coming_soon_title{
+    margin: 0;
+    line-height: 1;
+    font-size: 5em;
+    letter-spacing: -1px;
+    padding-top: 30vh;
+}
+
+.coming_soon_container{
+    background-color: rgba(30,40,50,.8);
+    height: 100%;
+    padding-left: 10%;
+    position: relative;
+}
+
+.sub_line{
+    margin-top: 20px;
+    height: 6px;
+    background-color: white;
+    width: 6em;
+    margin-left: 0;
+}
+
+.sub_text{
+    color: #DDD;
+    font-size: 20px;
+}
+
+.student_number{
+    color: #DDD;
+    font-size: 10px;
+}
+
+.theteam{
+    color: #DDD;
+    font-size: 15px;
+}
+.navbar a {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    float: right;
+    letter-spacing: 2px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+.navbar a:hover {
+    color: grey;
+}
