@@ -493,3 +493,25 @@ p#copyright:hover {
   background: -webkit-linear-gradient(rgba(255, 255, 255, 0), white);
   background: linear-gradient(rgba(255, 255, 255, 0), white);
 }
+
+#team{
+    background-color: #000000
+
+}
+.teamtext{
+    color: #FFF;
+    text-align: center;
+
+}
+.names{
+    text-align: left;
+
+}
+.fancy{
+    margin-top: 30px;
+    text-align: center;
+    left: 50%;
+    font-family: georgia;
+    font-style: italic;
+    padding: 0px 20px;
+}
