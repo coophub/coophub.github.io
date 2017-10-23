@@ -598,4 +598,5 @@ p#copyright:hover {
 #contact-form {
     width: 45%;
     margin-right: 5%;
+    content-align: right;
 }
