@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
 
-body a,p,ul,li,sub,sup{
+body a,p,ul,li,sub,sup,h1{
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
@@ -514,4 +514,12 @@ p#copyright:hover {
     font-family: georgia;
     font-style: italic;
     padding: 0px 20px;
+}
+
+#contact{
+    height: auto;
+}
+
+#contact-title {
+    font-size: 4.5em;
 }

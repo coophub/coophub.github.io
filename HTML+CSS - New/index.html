@@ -108,6 +108,12 @@ $(document).ready(
 */
 </script>
 
+    <style>
+        #map {
+            height: 15em;
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
 
@@ -238,6 +244,23 @@ $(document).ready(
         </section>
 
         <section class="color" id="contact">
+            <div id="map"></div>
+            <script>
+                function initMap() {
+                    var uluru = {lat: -25.363, lng: 131.044};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 4,
+                        center: uluru
+                    });
+                    var marker = new google.maps.Marker({
+                        position: uluru,
+                        map: map
+                    });
+                }
+            </script>
+            <script async defer
+                    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDrJFOTV0Lh8cAPIN0Oz4C9x7Ef7xVbL0Q&callback=initMap">
+            </script>
             <div id="info">
                 <p id="contact-title">Contact Us</p>
                 <p class="contact-info">Address</p>
