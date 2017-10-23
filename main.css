@@ -492,7 +492,8 @@ p#copyright:hover {
   background: linear-gradient(rgba(255, 255, 255, 0), white);
 }
 
-#team{
+/*TEAM SECTION*/
+#teamcontainer{
     background-color: white;
 
 }
@@ -501,21 +502,86 @@ p#copyright:hover {
     text-align: center;
 
 }
+
+/*Team Title*/
+.teamfancy { 
+    margin-top: 30px;
+    text-align: center;
+    font-family: georgia;
+    font-style: italic;
+    overflow: hidden;
+    left: 40%;
+}
+.teamfancy:before,
+.teamfancy:after {
+ background-color: #333;
+ content: "";
+ display: inline-block;
+ height: 1px;
+ position: relative;
+ vertical-align: middle;
+ width: 50%;
+}
+.teamfancy:before {
+ right: 0.5em;
+ margin-left: -50%;
+}
+.teamfancy:after {
+ left: 0.5em;
+ margin-right: -50%;
+}
+.title {
+  margin: 0 0 2em 0;
+}
+/*Team Names*/
 .teamnames{
     text-align: left;
     color: black;
     position: center;
 
 }
-.teamfancy{
-    margin-top: 30px;
+.teamname{
+    display: inline;
     text-align: center;
-    left: 50%;
-    font-family: georgia;
-    font-style: italic;
-    padding: 0px 20px;
+    margin-left: 12em;
+
+}
+/*Team Social*/
+.teamsocial{
+    display: inline;
+}
+.AndrewSocial{
+    font-size: 3px;
+    width: 3px;
+    margin-left: 34em;
+    display: inline;
+}
+.LucasSocial{
+    font-size: 3px;
+    width: 3px;
+    margin-left: 34em;
+    display: inline;
+}
+.BenoitSocial{
+    width: 3px;
+    font-size: 3px;
+    margin-left: 28em;
+    display: inline;
+}
+.DeidreickSocial{
+    font-size: 3px;
+    width: 3px;
+    margin-left: 33em;
+    display: inline;
+}
+.DanielSocial{
+    font-size: 3px;
+    width: 3px;
+    margin-left: 32em;
+    display: inline;
 }
 
+/*CONTACT*/
 #contact{
     height: auto;
 }
