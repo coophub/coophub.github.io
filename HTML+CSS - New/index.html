@@ -141,7 +141,38 @@ $(document).ready(
         </section>
 
         <section class="photo" id="about">
+            <br>
+                 <br>
+                  <br>
+                  <br>
+                  <h1>About CoopHub</h1>
 
+
+                  <div class = "panel">
+                    <pre > <!-- pre is tag that going to respect the structure of the paragraph without any break(br) -->
+ We help by being a middle man between a company and the university, by being
+ a universal hub for employers to post jobs to schools individualized coop navigators
+ using a single portal.
+ This streamlines the hiring process by letting employers choose multiple schools at once
+ and so they do not have to learn the mulitple complicated portals while having no loss in
+ exposure for the job offering, allowing the employer to employ the best employees and spend
+ less time doing so.
+         </pre>
+                 </div>
+                  <button class = "Read-button"><span>Read more</span></button>
+               </div>
+               <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+              <script>
+                    $('.Read-button').on('click', function(){
+                          $('.panel').toggleClass('-expanded');
+
+                              if ($('.panel').hasClass('-expanded')) {
+                                $('.Read-button').html('Collapse');
+                              } else {
+                                $('.Read-button').html('Read more');
+                              }
+                        });
+                </script>
         </section>
 
         <section class="photo" id="features">
