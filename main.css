@@ -700,3 +700,8 @@ p#copyright:hover {
 #contact-name, #contact-email, #contact-message {
     fontsize: 1em;
 }
+
+#map {
+    height: 15em;
+    width: 100%;
+}
