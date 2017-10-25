@@ -74,7 +74,11 @@ $(document).ready(
         if ($(this).scrollTop() > offset.top) {
             $('.topnav').css('background-color', 'rgba(238, 238, 238, 0.9)');
             $('#logo-link').attr('id', 'logo-link-down');
-            $('#list').attr('id', 'listdown');
+        } else {
+            if (window.innerWidth >= 960) {
+                $('.topnav').css('background-color', 'transparent');
+            }
+            $('#logo-link-down').attr('id', 'logo-link');
         }
 
         // Animates the navbar when scrolling past the home button
@@ -84,14 +88,30 @@ $(document).ready(
                 if(scroll_start > offset.top) {
                     $('.topnav').css('background-color', 'rgba(238, 238, 238, 0.9)');
                     $('#logo-link').attr('id', 'logo-link-down');
-                    $('#list').attr('id', 'listdown');
+                    $('.menu').attr('class', 'menudown');
                 } else {
-                    $('.topnav').css('background-color', 'transparent');
+                    if (window.innerWidth >= 960) {
+                        $('.topnav').css('background-color', 'transparent');
+                    }
                     $('#logo-link-down').attr('id', 'logo-link');
-                    $('#listdown').attr('id', 'list');
+                    $('.menudown').attr('class', 'menu');
                 }
             }
         );
+
+        // Changes the navbar background if the window is resized
+        $(window).on('resize', function(){
+            if ($(this).scrollTop() > offset.top) {
+                $('.topnav').css('background-color', 'rgba(238, 238, 238, 0.9)');
+            } else {
+                if (window.innerWidth >= 960) {
+                    $('.topnav').css('background-color', 'transparent');
+                } else {
+                    $('.topnav').css('background-color', 'rgba(238, 238, 238, 0.9)');
+                }
+            }
+        });
+
     }
 );
 
@@ -108,7 +128,7 @@ $(window).scroll(function() {
         });
     } else {
         $('nav').removeClass('fixed');
-        $('nav a.active').removeClass('active');
-        $('nav a:first').addClass('active');
+        $('nav  a.active').removeClass('active');
+        $('nav  a:first').addClass('active');
     }
 }).scroll();

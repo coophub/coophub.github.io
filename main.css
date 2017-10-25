@@ -107,68 +107,130 @@ span.logo-second {
     background-attachment: fixed;
 }
 
+/* Navigation Bar Menu Button */
+
+.topnav .menu-btn {
+    display: none;
+}
+
+.topnav .menu-btn:checked ~ nav .menu,
+.topnav .menu-btn:checked ~ nav .menudown{
+    max-height: 400px;
+}
+
+.topnav .menu-btn:checked ~ .menu-icon .navicon {
+    background: transparent;
+}
+
+.topnav .menu-btn:checked ~ .menu-icon .navicon:before {
+    transform: rotate(-45deg);
+}
+
+.topnav .menu-btn:checked ~ .menu-icon .navicon:after {
+    transform: rotate(45deg);
+}
+
+.topnav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
+.topnav .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
+    top: 0;
+}
+
 /* Navigation Bar */
 
 .topnav {
-    overflow: hidden;
-    z-index: 6;
+    background-color: rgba(238, 238, 238, 0.9);
     position: fixed;
     width: 100%;
+    z-index: 3;
     transition-duration: 2s;
 }
 
-#listdown {
-    display: inline-block;
-    position: absolute;
-    right: 2.3em;
+.topnav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
 }
 
-#listdown a {
-    letter-spacing: 2px;
-    padding: 1.8em 0.7em;
-    display: inline-block;
-    color: #333333;
-    font-size: 1em;
+.topnav li a {
+    display: block;
+    padding: 1.25em 0.7em;
+    text-decoration: none;
     transition-duration: 0.25s;
 }
 
-#listdown a:hover {
+.topnav li a:hover {
+    position: relative;
     color: #FFC80A;
     cursor: pointer;
     font-weight: 900;
-    transform: scale(1.2, 1.2);
-    transition-duration: 0.25s;
-    transition-timing-function: ease;
+    background-color: #222;
 }
 
-#list {
-    display: inline-block;
-    position: absolute;
-    right: 2.3em;
+.topnav .logo {
+    display: block;
+    float: left;
+    font-size: 2em;
+    padding: 10px 20px;
+    text-decoration: none;
 }
 
-#list a {
-    letter-spacing: 2px;
-    display: inline-block;
-    color: #eeeeee;
-    font-size: 1em;
-    padding: 1.8em 0.7em;
-    transition-duration: 0.25s;
+/* Navigation Bar Menu */
+
+.topnav nav .menu,
+.topnav nav .menudown{
+    clear: both;
+    max-height: 0;
+    transition: max-height .2s ease-out;
 }
 
-#list a:hover,
-.active
-{
-    color: #FFC80A !important;
+/* Navigation Bar Menu Icon */
+
+.topnav .menu-icon {
     cursor: pointer;
-    font-weight: 900;
-    transform: scale(1.2, 1.2);
-    transition-duration: 0.25s;
-    transition-timing-function: ease;
+    display: inline-block;
+    float: right;
+    padding: 28px 20px;
+    position: relative;
+    user-select: none;
+}
+
+.topnav .menu-icon .navicon {
+    background: #333;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background .2s ease-out;
+    width: 18px;
+}
+
+.topnav .menu-icon .navicon:before,
+.topnav .menu-icon .navicon:after {
+    background: #333;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+
+.topnav .menu-icon .navicon:before {
+    top: 5px;
+}
+
+.topnav .menu-icon .navicon:after {
+    top: -5px;
+}
+
+/* Navigation Bar */
+
+a {
+    color: #222222;
 }
 
 #logo {
-    padding: 0.85em 3em;
+    padding: 0.55em 1.25em;
     float: left;
     transition-duration: 0.3s;
 }
@@ -176,15 +238,16 @@ span.logo-second {
 #logo-link {
     float:left;
     color: transparent;
-    font-size: 2.4375em;
+    font-size: 2em;
     cursor: default;
     transition-duration: 0.3s;
 }
 
 #logo-link-down {
     float:left;
+    letter-spacing: 1.05px;
     transition-duration: 0.3s;
-    font-size: 2.4375em;
+    font-size: 2em;
     color: rgb(34, 34, 34);
     cursor: pointer;
 }
@@ -196,6 +259,73 @@ span.logo-second {
     transition-duration: 0.3s;
     transform: scale(1.07, 1.07);
     transition-timing-function: ease;
+}
+
+/* Navigation Bar Transition (60em = 960px) */
+
+@media (min-width: 60em) {
+    .topnav li {
+        float: left;
+    }
+
+    .topnav li a {
+        padding: 1.25em 0.7em;
+        font-size: 1em;
+        letter-spacing: 2px;
+    }
+
+    .topnav nav .menu {
+        clear: none;
+        float: right;
+        max-height: none;
+        padding-right: 1.25em;
+    }
+
+    .topnav .menu-icon {
+        display: none;
+    }
+
+    .topnav li a:hover {
+        color: #FFC80A;
+        font-weight: 900;
+        transform: scale(1.2, 1.2);
+        background-color: inherit;
+    }
+
+    .topnav {
+        transition-duration: 2s;
+        background-color: transparent;
+    }
+
+    .menu li a {
+        color: #eeeeee;
+        transition-duration: 0.25s;
+    }
+
+    .menu li a:hover {
+        color: #FFC80A !important;
+        cursor: pointer;
+        font-weight: 900;
+        transform: scale(1.2, 1.2);
+        transition-duration: 0.25s;
+        transition-timing-function: ease;
+    }
+
+    .topnav nav .menudown {
+        clear: none;
+        float: right;
+        max-height: none;
+        padding-right: 1.25em;
+    }
+
+    .active {
+        color: #FFC80A !important;
+        cursor: pointer;
+        font-weight: 900;
+        transform: scale(1.2, 1.2);
+        transition-duration: 0.25s;
+        transition-timing-function: ease;
+    }
 }
 
 /* Pricing Section */

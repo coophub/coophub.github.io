@@ -8,24 +8,27 @@
     <title>COOPHUB</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="index.js"></script>
-    
+
 </head>
 <body>
 
-    <nav class="topnav" data-animation="flipInX" data-timeout="400">
-        <nav id="list">
-            <a href="#home" class="topnav-link">HOME</a>
-            <a href="#about" class="topnav-link">ABOUT</a>
-            <a href="#features" class="topnav-link">FEATURES</a>
-            <a href="#teamcontainer" class="topnav-link">TEAM</a>
-            <a href="#pricing" class="topnav-link">PRICING</a>
-            <a href="#contact" class="topnav-link">CONTACT</a>
-        </nav>
-
+    <header class="topnav" data-animation="flipInX" data-timeout="400">
         <div id="logo">
             <a id="logo-link" href="#home">COOPHUB</a>
         </div>
-    </nav>
+        <input class="menu-btn" type="checkbox" id="menu-btn" />
+        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+        <nav>
+            <ul class="menu">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#features">FEATURES</a></li>
+                <li><a href="#teamcontainer">TEAM</a></li>
+                <li><a href="#pricing">PRICING</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <section class="photo" id="home">
         <div class="info">
