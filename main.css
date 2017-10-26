@@ -849,6 +849,7 @@ p#copyright:hover {
 .features-switch {
   position: relative;
   display: inline-block;
+  margin-top: 2em;
   width: 20em;
   height: 3em;
 }
@@ -1046,6 +1047,7 @@ input:checked + .features-slider:before {
 }
 
 .features-browser {
+  margin-top: 6em;  
   width: 40%;
   height: 50%;
   position: absolute;
