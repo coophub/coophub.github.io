@@ -21,6 +21,15 @@ $(document).ready(function(){
             });
         } // End if
     });
+    // Fade out image when switch is clicked
+    $('#features-switch').click(function() {
+        if($("#features-switch").is(':checked')){
+            console.log("hello")
+            $("#features-iphone-container").fadeOut();
+        } else {
+            $("#features-iphone-container").fadeIn();
+        }
+    });
 });
 
 // Predefined code for using Google Maps Static Javascript API
