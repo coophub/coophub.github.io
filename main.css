@@ -1046,60 +1046,139 @@ input:checked + .features-slider:before {
   opacity: 1;
 }
 
-.features-browser {
-  margin-top: 6em;  
-  width: 40%;
-  height: 50%;
-  position: absolute;
-  border-style: solid;
-  border-width: 2px 0 2px 2px;
-  border-color: #7b7b7b transparent #7b7b7b #7b7b7b;
-  right: 0;
-  border-radius: 10px 0 0 10px;
-  overflow: hidden;
+
+.features-iphone-container {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.features-top-bar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 20px;
-  line-height: 20px;
-  background: #fff;
-  border-bottom: solid 2px #7b7b7b;
-  z-index: 2;
-  text-align: left;
+/*==== iPHONE BODY ====*/
+
+.features-iphone {
+    height: 622.08px;
+    width: 317px;
+    background-color: #202020;
+    border-radius: 3em;
+    position: relative;
 }
 
-.features-dot {
+/*==== POWER/LOCK BUTTON ====*/
+
+.features-power {
+    height: 55px;
+    width: 3%;
+    background-color: #202020;
+    position: absolute;
+    left: 98%;
+    top: 120px;
+    border-radius: 3em;
+}
+
+/*==== SPEAKER BUTTONS ====*/
+
+.features-speaker1 {
+    height: 45px;
+    width: 3%;
+    background-color: #202020;
+    position: absolute;
+    left: -1.4%;
+    top: 125px;
+    border-radius: 3.5em;
+}
+
+.features-speaker2 {
+    height: 45px;
+    width: 3%;
+    background-color: #202020;
+    position: absolute;
+    left: -1.4%;
+    top: 178px;
+    border-radius: 3.5em;
+}
+
+/*==== FRONT CAMERA ====*/
+
+.features-camera {
+    width: 9px;
+    height: 9px;
+    background-color: #2f2f2f;
+    border-radius: 50%;
+    position: absolute;
+    top: 6.4%;
+    left: 38%;
+    transform: translateX(-38%);
+}
+
+/*==== FRONT SPEAKER ====*/
+
+.features-speaker {
+    width: 15%;
+    height: 7px;
+    background-color: #2f2f2f;
+    border-radius: 20px;
+    position: absolute;
+    top: 6.4%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/*==== MAIN SCREEN ====*/
+
+.features-screen {
+    max-width: 90%;
+    height: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 22%;
+    position: relative;
+}
+
+.features-browser-container{
+    position: absolute;
+    margin-top: 5em;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    right: 50%;
+    left: 25%;
+}
+.features-browser{
+  border-top: 2em solid rgba(230, 230, 230, 0.7);
+  box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
   position: relative;
-  display: inline-block;
-  padding: 4px;
-  background: #c7c7c7;
-  border-radius: 100%;
+  border-radius: 3px 3px 0 0
+  margin: 0 auto;
 }
 
-.features-dot:nth-child(1) {
-  margin-left: 1em;
-}
-
-#tabs-1, #tabs-2, #tabs-3 {
+.features-browser:before {
+  display: block;
   position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
+  content: '';
+  top: -1.25em;
+  left: 1em;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background-color: #f44;
+  box-shadow: 0 0 0 2px #f44, 1.5em 0 0 2px #9b3, 3em 0 0 2px #fb5;
 }
 
-#tabs-1 {
-  background: #9b9b9b;
+.features-browser > * {
+  display: block;
 }
 
-#tabs-2 {
-  background: #c9c9c9;
+.features-browser img{
+    width: 100%;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
 }
 
-#tabs-3 {
-  background: #1b1b1b;
+.features-screen img{
+    width: 100%;
+    border-radius: 1.3em;
 }
