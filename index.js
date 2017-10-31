@@ -121,6 +121,20 @@ $(document).ready(
             }
         });
 
+        $("#contact-email-box").focus(function() {
+            $('#contact-email').css('visibility', 'visible')
+            $('#contact-email').hide();
+            $('#contact-email').fadeIn(100);
+        });
+
+        $('#email-elements input').blur(function(){
+            var sd = $(this).attr('placeholder');
+            if( !$(this).val() ) {
+                $('#contact-email').css('visibility', 'hidden')
+                //$('contact-email').show();
+                //$('contact-email').fadeOut(100);
+            }
+        });
     }
 );
 

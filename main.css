@@ -819,9 +819,17 @@ p#copyright:hover {
     width: 85%;
 }
 
+::-webkit-input-placeholder {
+    font-family: montserrat;
+}
+
 #name-elements, #email-elements {
     width: 50%;
     float: left;
+}
+
+#message-elements {
+    margin-top: 10%;
 }
 
 #contact-message-box {
@@ -837,6 +845,7 @@ p#copyright:hover {
 
 #contact-name, #contact-email, #contact-message {
     fontsize: 1em;
+    visibility: hidden;
 }
 
 #bottom-button {
