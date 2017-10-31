@@ -34,9 +34,9 @@ $(document).ready(function(){
 
 // Predefined code for using Google Maps Static Javascript API
 function initMap() {
-    var uluru = {lat: -25.363, lng: 131.044};
+    var uluru = {lat: 45.423722, lng: -75.683634};
     var map = new google.maps.Map(document.getElementById('map'), {
-        zoom: 4,
+        zoom: 16,
         center: uluru
     });
     var marker = new google.maps.Marker({
