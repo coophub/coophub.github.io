@@ -784,10 +784,16 @@ p#copyright:hover {
     display: block;
 }
 
+#contact-top {
+    width: 100%;
+    text-align: center;
+}
+
 #contact-title {
     font-size: 3.5em;
     z-index: 4;
-    margin-left: 12%;
+    letter-spacing: 2px;
+    padding-top: 5%;
 }
 
 .contact-stuff {
@@ -825,10 +831,23 @@ p#copyright:hover {
     outline: none;
     outline-style: none;
     border: solid #FFC80A 2px;
+    width: 92.5%;
+    resize: none;
 }
 
 #contact-name, #contact-email, #contact-message {
     fontsize: 1em;
+}
+
+#bottom-button {
+    width: 92.5%;
+    content-align: center;
+    padding: 0px 45%;
+}
+
+#contact-button {
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 #map {
