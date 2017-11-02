@@ -844,7 +844,8 @@ p#copyright:hover {
 }
 
 #contact-name, #contact-email, #contact-message {
-    fontsize: 1em;
+    font-size: 0.85em;
+    padding-left: 1%;
     visibility: hidden;
 }
 
