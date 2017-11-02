@@ -120,20 +120,21 @@ $(document).ready(
                 }
             }
         });
-
+        /*
         $("#contact-email-box").focus(function() {
-            $('#contact-email').css({visibility: 'visible', transition-duration: '1s'})
-            //$('#contact-email').hide();
-            // $('#contact-email').fadeIn(300);
-        });
+          $('#contact-email').css({visibility: 'visible', transition-duration: '1s'})) //transition-duration: '1s')
 
-        //$('#contact-email-box').blur(function(){
-            //if( !$(this).val() ) {
-                //$('#contact-email').css('visibility', 'hidden')
-                //$('contact-email').show();
-                //$('contact-email').fadeOut(100);
-            //}
-        //});
+          //$('#contact-email').hide();
+          // $('#contact-email').fadeIn(300);
+         });
+         $('#email-elements input').blur(function(){
+ -            var sd = $(this).attr('placeholder');
+ -            if( !$(this).val() ) {
+ -                $('#contact-email').css('visibility', 'hidden')
+                  //$('contact-email').show();
+                  //$('contact-email').fadeOut(100);
+ -            }
+ -        });*/
     }
 );
 

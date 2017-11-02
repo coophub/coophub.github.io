@@ -579,6 +579,7 @@ p#copyright:hover {
 
 .Read-button{
   font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
   background-color: #FFC80A;
   border-radius: 20px;
   padding: 20px 70px;
@@ -590,6 +591,8 @@ p#copyright:hover {
 }
 
 .Read-button span {
+  font-weight: 400;
+  letter-spacing: 2px;
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -614,7 +617,8 @@ p#copyright:hover {
   border: 5px solid #FFC80A;
 }
 
-.Read-button.active{
+.Read-button:active{
+
 }
 
 .Read-button:hover span {
