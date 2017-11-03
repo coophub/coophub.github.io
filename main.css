@@ -566,7 +566,7 @@ footer {
     cursor: pointer;
     align-content: center;
     padding: 0.625em;
-    margin: 0 0.375em 1.25em ;
+    margin: 0 0.375em 0.25em ;
     font-size: 1.25em;
     width: 20px;
     text-align: center;
@@ -608,6 +608,20 @@ p#copyright:hover {
 #footer-copyright {
     display: flex;
     justify-content: center;
+    cursor: pointer;
+}
+
+#googlePlayBadge {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.25em;
+}
+
+#googlePlayBadge img {
+    display: block;
+    margin: 0 auto;
+    width: 200px;
+    height: auto;
     cursor: pointer;
 }
 
@@ -1272,3 +1286,5 @@ input:checked + .features-slider:before {
     width: 100%;
     border-radius: 1.3em;
 }
+
+
