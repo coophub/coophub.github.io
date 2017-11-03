@@ -5,6 +5,7 @@ body a,p,ul,li,sub,sup,h1, pre{
     padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+    font-size: 1em;
     text-decoration: none;
     user-select: none;
     cursor: default;
@@ -118,6 +119,11 @@ span.logo-second {
     max-height: 400px;
 }
 
+.topnav .menu-btn:checked ~ nav .menu1,
+.topnav .menu-btn:checked ~ nav .menudown1{
+    max-height: 0px;
+}
+
 .topnav .menu-btn:checked ~ .menu-icon .navicon {
     background: transparent;
 }
@@ -138,7 +144,7 @@ span.logo-second {
 /* Navigation Bar */
 
 .topnav {
-    background-color: rgba(238, 238, 238, 0.9);
+    background-color: transparent;
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -152,8 +158,13 @@ span.logo-second {
     overflow: hidden;
 }
 
+.topnav li {
+    float: left;
+}
+
 .topnav li a {
     display: block;
+    letter-spacing: 2px;
     padding: 1.25em 0.7em;
     text-decoration: none;
     transition-duration: 0.25s;
@@ -164,7 +175,8 @@ span.logo-second {
     color: #FFC80A;
     cursor: pointer;
     font-weight: 900;
-    background-color: #222;
+    transform: scale(1.2, 1.2);
+    background-color: inherit;
 }
 
 .topnav .logo {
@@ -175,20 +187,47 @@ span.logo-second {
     text-decoration: none;
 }
 
+.active {
+    color: #FFC80A !important;
+    cursor: pointer;
+    transition-duration: 0.25s;
+    font-weight: 900;
+    background-color: inherit;
+    transform: scale(1.2, 1.2);
+    transition-timing-function: ease;
+}
+
 /* Navigation Bar Menu */
 
 .topnav nav .menu,
 .topnav nav .menudown{
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
+    clear: none;
+    float: right;
+    max-height: none;
+    padding-right: 1.25em;
+    transition-duration: 0.2s;
+    transition-timing-function: ease-out;
+}
+
+.menu li a {
+    color: #eeeeee;
+    transition-duration: 0.25s;
+}
+
+.menu li a:hover {
+    color: #FFC80A !important;
+    cursor: pointer;
+    font-weight: 900;
+    transform: scale(1.2, 1.2);
+    transition-duration: 0.25s;
+    transition-timing-function: ease;
 }
 
 /* Navigation Bar Menu Icon */
 
 .topnav .menu-icon {
     cursor: pointer;
-    display: inline-block;
+    display: none;
     float: right;
     padding: 28px 20px;
     position: relative;
@@ -263,68 +302,81 @@ a {
 
 /* Navigation Bar Transition (60em = 960px) */
 
-@media (min-width: 60em) {
+.topnav-mobile li {
+    float: none;
+}
+.topnav-mobile li a {
+    color: #222222;
+    letter-spacing: normal;
+}
+
+.topnav-mobile nav .menu,
+.topnav-mobile nav .menudown{
+    clear: both;
+    float: none;
+    max-height: 0;
+    padding-right: 0;
+}
+
+.topnav-mobile .menu-icon {
+    display: inline-block;
+}
+
+.topnav-mobile li a:hover {
+    transform: none;
+    background-color: #222;
+}
+
+.topnav-mobile {
+    background-color: rgba(238, 238, 238, 0.9);
+}
+
+.topnav-mobile .active {
+    transform: none;
+    color: #eeeeee !important;;
+    background-color: #333;
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 960px) {
+
     .topnav li {
-        float: left;
+        float: none;
     }
 
     .topnav li a {
-        padding: 1.25em 0.7em;
-        font-size: 1em;
-        letter-spacing: 2px;
+        color: #222222;
+        letter-spacing: normal;
     }
 
-    .topnav nav .menu {
-        clear: none;
-        float: right;
-        max-height: none;
-        padding-right: 1.25em;
+    .topnav nav .menu,
+    .topnav nav .menudown{
+        clear: both;
+        float: none;
+        max-height: 0;
+        padding-right: 0;
     }
 
     .topnav .menu-icon {
-        display: none;
+        display: inline-block;
     }
 
     .topnav li a:hover {
-        color: #FFC80A;
-        font-weight: 900;
-        transform: scale(1.2, 1.2);
-        background-color: inherit;
+        transform: none;
+        background-color: #222;
     }
 
     .topnav {
-        transition-duration: 2s;
-        background-color: transparent;
-    }
-
-    .menu li a {
-        color: #eeeeee;
-        transition-duration: 0.25s;
-    }
-
-    .menu li a:hover {
-        color: #FFC80A !important;
-        cursor: pointer;
-        font-weight: 900;
-        transform: scale(1.2, 1.2);
-        transition-duration: 0.25s;
-        transition-timing-function: ease;
-    }
-
-    .topnav nav .menudown {
-        clear: none;
-        float: right;
-        max-height: none;
-        padding-right: 1.25em;
+        background-color: rgba(238, 238, 238, 0.9);
     }
 
     .active {
-        color: #FFC80A !important;
-        cursor: pointer;
-        font-weight: 900;
-        transform: scale(1.2, 1.2);
-        transition-duration: 0.25s;
-        transition-timing-function: ease;
+        transform: none;
+        color: #eeeeee !important;
+        background-color: #333;
+        font-weight: 600;
     }
 }
 
@@ -579,6 +631,7 @@ p#copyright:hover {
 
 .Read-button{
   font-size: 24px;
+  font-family: 'Montserrat', sans-serif;
   background-color: #FFC80A;
   border-radius: 20px;
   padding: 20px 70px;
@@ -590,6 +643,8 @@ p#copyright:hover {
 }
 
 .Read-button span {
+  font-weight: 400;
+  letter-spacing: 2px;
   cursor: pointer;
   display: inline-block;
   position: relative;
@@ -614,7 +669,8 @@ p#copyright:hover {
   border: 5px solid #FFC80A;
 }
 
-.Read-button.active{
+.Read-button:active{
+
 }
 
 .Read-button:hover span {
@@ -1185,7 +1241,7 @@ input:checked + .features-slider:before {
   border-top: 2em solid rgba(230, 230, 230, 0.7);
   box-shadow: 0 0.1em 1em 0 rgba(0, 0, 0, 0.4);
   position: relative;
-  border-radius: 3px 3px 0 0
+  border-radius: 3px 3px 0 0;
   margin: 0 auto;
 }
 
