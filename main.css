@@ -614,7 +614,8 @@ p#copyright:hover {
 #googlePlayBadge {
     display: flex;
     justify-content: center;
-    margin-bottom: 0.25em;
+    margin: -9px;
+    margin-top: -0.2em
 }
 
 #googlePlayBadge img {
@@ -623,6 +624,17 @@ p#copyright:hover {
     width: 200px;
     height: auto;
     cursor: pointer;
+}
+
+#legal {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.7em;
+}
+
+#legal p {
+    font-size: 0.5em;
+    color: #aaaaaa;
 }
 
 /* About section */
