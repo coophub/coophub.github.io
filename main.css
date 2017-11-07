@@ -63,9 +63,8 @@ body, html {
 }
 
 .info {
-    left: 5%;
-    top: 37%;
-    width: 90%;
+    margin: auto auto;
+    vertical-align: middle;
     text-align: center;
     position: relative;
 }
@@ -106,6 +105,9 @@ span.logo-second {
     background-size: cover;
     height: 100%;
     background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
 }
 
 /* Navigation Bar Menu Button */
@@ -629,8 +631,11 @@ p#copyright:hover {
 #googlePlayBadge {
     display: flex;
     justify-content: center;
+    margin-top: 0.3em
+}
+
+#googlePlayBadge a {
     margin: -9px;
-    margin-top: -0.2em
 }
 
 #googlePlayBadge img {
