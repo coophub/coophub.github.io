@@ -100,7 +100,7 @@ span.logo-second {
                     rgba(22,22,22, 0.35),
                     rgba(22,22,22,0.35)
             ),
-            url("https://images.unsplash.com/photo-1495511623436-ba44aaee07cf?");
+            url("Images/home.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -387,8 +387,7 @@ a {
             linear-gradient(
                     rgba(22,22,22, 0.35),
                     rgba(22,22,22,0.35)
-            ),
-            url("https://images.unsplash.com/photo-1454165804606-c3d57bc86b40");
+            ), url("Images/pricing.jpg");
     height: auto;
     padding: 3em 0;
     background-repeat:no-repeat;
@@ -665,8 +664,7 @@ p#copyright:hover {
           linear-gradient(
                   rgba(22,22,22, 0.35),
                   rgba(22,22,22,0.35)
-          ),
-          url("https://images.pexels.com/photos/358627/pexels-photo-358627.jpeg?w=1260&h=750&dpr=2&auto=compress&cs=tinysrgb");
+          );
 }
 
 
