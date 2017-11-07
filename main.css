@@ -757,7 +757,7 @@ p#copyright:hover {
 
 /*Team Title*/
 .teamfancy {
-    margin-top: 30px;
+    margin-bottom: 15em;
     text-align: center;
     font-family: georgia;
     font-style: italic;
@@ -783,7 +783,7 @@ p#copyright:hover {
  margin-right: -50%;
 }
 .title {
-  margin: 0 0 2em 0;
+  margin: 10em 0 4em 0;
 }
 /*Team Names*/
 .teamnames{
