@@ -23,6 +23,11 @@ body, html {
     margin: 0;
 }
 
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
 /* Home Section */
 
 #home-button {
@@ -103,6 +108,7 @@ span.logo-second {
     background-position: center;
     background-size: cover;
     height: 100%;
+    min-height: 100%;
     background-attachment: fixed;
 
     display: flex;
@@ -389,6 +395,7 @@ a {
             ), url("Images/pricing.jpg");
     height: auto;
     padding: 3em 0;
+    min-height: 100%;
     background-repeat:no-repeat;
     background-size: cover;
     background-attachment: fixed;
