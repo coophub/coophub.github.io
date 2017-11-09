@@ -48,7 +48,22 @@ body {
 }
 
 #home-title {
-    font-size: 15vw;
+    font-size: 0;
+    animation-name: home;
+    animation-delay: 0.1s;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+@keyframes home {
+    from{
+        font-size:0;
+    }
+    to {
+        font-size: 15vw;
+    }
 }
 
 .button {
@@ -100,18 +115,18 @@ span.logo-second {
 #home {
     background:
             linear-gradient(
-                    rgba(22,22,22, 0.35),
-                    rgba(22,22,22,0.35)
+                    rgba(22,22,22, 0.5),
+                    rgba(22,22,22,0.5)
             ),
             url("Images/home.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
+    display: flex;
     height: 100%;
     min-height: 100%;
-    background-attachment: fixed;
-
-    display: flex;
+    width: auto;
     align-items: center;
 }
 
@@ -348,6 +363,10 @@ a {
 
 @media (max-width: 960px) {
 
+    #home {
+        padding: 1em;
+    }
+
     .topnav li {
         float: none;
     }
@@ -477,7 +496,7 @@ p#pricing-description {
     transition-duration: 0.3s;
 }
 
-@media (max-width: 37em) {
+@media (max-width: 960px) {
     #pricing-block1 {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
@@ -620,6 +639,7 @@ p#copyright {
     font-size: 90%;
     color: #eeeeee;
     font-weight: 300;
+    text-align: center;
     letter-spacing: 0.09375em;
     transition-duration: 0.3s;
 }
