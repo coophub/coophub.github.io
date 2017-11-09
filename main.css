@@ -119,6 +119,11 @@ span.logo-second {
 }
 
 #home:after {
+    content:"";
+    top:0;
+    height:100vh; /* fix for mobile browser address bar appearing disappearing */
+    left:0;
+    right:0;
     background:
             linear-gradient(
                     rgba(22,22,22, 0.35),
@@ -131,10 +136,7 @@ span.logo-second {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    height: 100%;
-    min-height: 100%;
     background-attachment: fixed;
-
     display: flex;
     align-items: center;
 }
