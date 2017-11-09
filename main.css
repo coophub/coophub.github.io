@@ -865,6 +865,7 @@ p#copyright:hover {
 }
 
 #contact-form {
+    position: relative;
     width: 50%;
     z-index: 3;
     text-align: left;
@@ -904,6 +905,12 @@ p#copyright:hover {
     border-right: none;
     border-bottom: solid #FFC80A 2px;
     width: 85%;
+    display: block;
+    transition: all 1s;
+}
+
+.focusedLabel {
+    transform: translateY(-1.5em)
 }
 
 ::-webkit-input-placeholder {
@@ -928,12 +935,15 @@ p#copyright:hover {
     border: solid #FFC80A 2px;
     width: 92.5%;
     resize: none;
+    display: block;
+    transition: all 1s;
 }
 
 #contact-name, #contact-email, #contact-message {
     font-size: 0.85em;
     padding-left: 1%;
-    visibility: hidden;
+    position: absolute;
+    z-index: -1;
 }
 
 #bottom-button {
@@ -945,6 +955,15 @@ p#copyright:hover {
 #contact-button {
     margin-top: 5%;
     margin-bottom: 5%;
+}
+
+/* Placeholder colour */
+::-webkit-input-placeholder {
+    color: #AAAAAA;
+}
+
+::-moz-placeholder {
+    color: #AAAAAA;
 }
 
 #map {

@@ -152,6 +152,32 @@ $(document).ready(
                   //$('contact-email').fadeOut(100);
               }
           });*/
+
+        var placeholders = ["John", "email@example.com", "Text here"];
+
+        for(var i = 1; i < 4; i++){
+            let inputEl = document.getElementById("input" + i);
+            let labelEl = document.getElementById("label" + i);
+            let placeholdersIndex = i - 1;
+            inputEl.addEventListener("focus", function(){
+                labelEl.className = "focusedLabel";
+                this.className = "focusedInput";
+                this.placeholder = placeholders[placeholdersIndex];
+            });
+        };
+
+//Sets back the original properties of the labels unless the corresponding input has been filled in
+        for(var i = 1; i < 4; i++){
+            let inputEl = document.getElementById("input" + i);
+            let labelEl = document.getElementById("label" + i);
+            inputEl.addEventListener("focusout", function(){
+                this.className = "";
+                this.placeholder = "";
+                if(inputEl.value == ""){
+                    labelEl.className = "";
+                }
+            });
+        };
     }
 );
 
