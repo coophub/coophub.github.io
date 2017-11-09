@@ -106,6 +106,30 @@ span.logo-second {
             url("Images/home.jpg");
     background-repeat: no-repeat;
     background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 100%;
+    min-height: 100%;
+    background-attachment: fixed;
+
+    display: flex;
+    align-items: center;
+}
+
+#home:after {
+    background:
+            linear-gradient(
+                    rgba(22,22,22, 0.35),
+                    rgba(22,22,22,0.35)
+            ),
+            url("Images/home.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     background-size: cover;
     height: 100%;
     min-height: 100%;
