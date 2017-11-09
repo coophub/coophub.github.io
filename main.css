@@ -688,16 +688,13 @@ p#copyright:hover {
 /* About section */
 
 #about {
+
   height: auto;
   padding-bottom: 5%;
   text-align: center;
-  color: White;
+  color: #eeeeee;
   font-size: 25px;
-  background:
-          linear-gradient(
-                  rgba(22,22,22, 0.35),
-                  rgba(22,22,22,0.35)
-          );
+  background-color: #323232;
 }
 
 
@@ -725,9 +722,10 @@ p#copyright:hover {
 }
 
 .panel{
+  font-weight: 400;
   font-size: 20px;
   position: relative;
-  max-height: 140px;
+  max-height: 90px;
   overflow: hidden;
   -webkit-transition: max-height 1s ease;
   transition: max-height 1s ease;
@@ -735,10 +733,25 @@ p#copyright:hover {
   line-height: 150%;
 }
 
+@media (max-width:600px) {
+  #about{
+    padding-bottom: 50%;
+  }
+  .panel{
+    max-height: 160px;
+    margin-right: 15px;
+    font-weight: 400;
+    font-size: 0.72em;
+    font-weight: 300;
+    overflow-y:hidden;
+    margin-right: auto;
+  }
+
+}
 .Read-button:hover {
   background-color: transparent;
- color: black;
- transition-duration: 0.35s;
+  color: white;
+  transition-duration: 0.35s;
   border: 5px solid #FFC80A;
 }
 
@@ -1388,6 +1401,3 @@ input:checked + .features-slider:before {
     color: #232323;
     background-color: #FFC80A;
 }
-
-
-
