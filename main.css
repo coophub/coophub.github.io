@@ -86,6 +86,7 @@ body {
     vertical-align: middle;
     text-align: center;
     position: relative;
+    margin-bottom: 100px;
 }
 
 span.logo-first {
@@ -128,6 +129,29 @@ span.logo-second {
     min-height: 100%;
     width: auto;
     align-items: center;
+}
+
+#down{
+  position: relative;
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+  color: #eeeeee;
+  padding: 15px;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+  top: 90px;
+
+
+
+}
+#down:hover{
+  color: #FFC80A;
+  background-color: #323232;
+  transform: scale(1.2,1.2);
+  transition-duration: 0.2s;
 }
 
 /* Navigation Bar Menu Button */
@@ -735,7 +759,7 @@ p#copyright:hover {
 
 @media (max-width:600px) {
   #about{
-    padding-bottom: 50%;
+    padding-bottom: 30%;
   }
   .panel{
     max-height: 160px;
