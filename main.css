@@ -953,6 +953,7 @@ p#copyright:hover {
     z-index: 3;
     text-align: left;
     display: block;
+    margin-right: 5%;
 }
 
 #contact-top {
@@ -972,31 +973,32 @@ p#copyright:hover {
     z-index: 4;
     margin-left: 18%;
     font-weight: bold;
-    padding: 3.5% 0;
+    padding: 6.5% 0;
 }
 
 .contact-label {
     font-size: 1em;
     letter-spacing: 5px;
-    color: #ccc;
+    color: #a6a6a6;
     z-index: 4;
     margin-left: 18%;
 }
 
-#contact-info-first {
-    margin-top: 5%;
-}
-
-#name-elements, #email-elements {
+#name-elements {
     width: 50%;
     float: left;
+}
+
+#email-elements {
+    width: 50%;
+    float: right;
 }
 
 #message-elements {
     margin-top: 10%;
 }
 
-#contact-name-box, #contact-email-box {
+#contact-name-box {
     background-color: transparent;
     color: black;
     padding: 0.25em 0.35em;
@@ -1004,7 +1006,24 @@ p#copyright:hover {
     outline-style: none;
     border-width: 0 0 2px 0;
     border-color: #ccc;
-    width: 85%;
+    width: 95%;
+    float: left;
+    transition-duration: 0.5s;
+    font-family: montserrat;
+    box-sizing: border-box;
+}
+
+#contact-email-box {
+    background-color: transparent;
+    color: black;
+    padding: 0.25em 0.35em;
+    outline: none;
+    outline-style: none;
+    border-width: 0 0 2px 0;
+    border-color: #ccc;
+    float: right;
+    width: 95%;
+    box-sizing: border-box;
     transition-duration: 0.5s;
     font-family: montserrat;
 }
@@ -1021,17 +1040,18 @@ p#copyright:hover {
     outline-style: none;
     border-width: 2px;
     border-color: #ccc;
-    width: 92.5%;
+    width: 100%;
     resize: none;
     transition-duration: 0.5s;
     font-family: montserrat;
+    box-sizing: border-box;
 }
 
-#contact-name, #contact-email, #contact-message {
+/*#contact-name, #contact-email, #contact-message {
     font-size: 0.85em;
     padding-left: 1%;
     visibility: hidden;
-}
+}*/
 
 #contact-name-box:focus, #contact-email-box:focus {
     border-color: #FFC80A;
@@ -1044,14 +1064,14 @@ p#copyright:hover {
 }
 
 #bottom-button {
-    width: 92.5%;
-    content-align: center;
-    padding: 0px 45%;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 #contact-button {
-    margin-top: 5%;
-    margin-bottom: 5%;
+    margin: 5% auto;
+    padding: 3% 5%;
 }
 
 #map {
