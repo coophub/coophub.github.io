@@ -942,14 +942,14 @@ p#copyright:hover {
 }
 
 #contact-info {
-    width: 50%;
+    width: 40%;
     z-index: 3;
     text-align: left;
     position: relative;
 }
 
 #contact-form {
-    width: 50%;
+    width: 60%;
     z-index: 3;
     text-align: left;
     display: block;
@@ -971,27 +971,20 @@ p#copyright:hover {
     font-size: 1em;
     z-index: 4;
     margin-left: 18%;
+    font-weight: bold;
+    padding: 3.5% 0;
+}
+
+.contact-label {
+    font-size: 1em;
+    letter-spacing: 5px;
+    color: #ccc;
+    z-index: 4;
+    margin-left: 18%;
 }
 
 #contact-info-first {
     margin-top: 5%;
-}
-
-#contact-name-box, #contact-email-box {
-    background-color: transparent;
-    color: black;
-    padding: 0.25em 0.25em;
-    outline: none;
-    outline-style: none;
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    border-bottom: solid #FFC80A 2px;
-    width: 85%;
-}
-
-::-webkit-input-placeholder {
-    font-family: montserrat;
 }
 
 #name-elements, #email-elements {
@@ -1003,21 +996,51 @@ p#copyright:hover {
     margin-top: 10%;
 }
 
+#contact-name-box, #contact-email-box {
+    background-color: transparent;
+    color: black;
+    padding: 0.25em 0.35em;
+    outline: none;
+    outline-style: none;
+    border-width: 0 0 2px 0;
+    border-color: #ccc;
+    width: 85%;
+    transition-duration: 0.5s;
+    font-family: montserrat;
+}
+
+::-webkit-input-placeholder {
+    font-family: montserrat;
+}
+
 #contact-message-box {
     background-color: transparent;
     color: black;
-    padding: 0.25em 0.25em;
+    padding: 0.25em 0.45em;
     outline: none;
     outline-style: none;
-    border: solid #FFC80A 2px;
+    border-width: 2px;
+    border-color: #ccc;
     width: 92.5%;
     resize: none;
+    transition-duration: 0.5s;
+    font-family: montserrat;
 }
 
 #contact-name, #contact-email, #contact-message {
     font-size: 0.85em;
     padding-left: 1%;
     visibility: hidden;
+}
+
+#contact-name-box:focus, #contact-email-box:focus {
+    border-color: #FFC80A;
+    transition-duration: 0.5s;
+}
+
+#contact-message-box:focus {
+    border-color: #FFC80A;
+    transition-duration: 0.5s;
 }
 
 #bottom-button {
