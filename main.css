@@ -1070,8 +1070,25 @@ p#copyright:hover {
 }
 
 #contact-button {
-    margin: 5% auto;
-    padding: 3% 5%;
+    background-color: transparent;
+    border-radius: 10px;
+    padding: 10px 60px;
+    border: 3px solid #FFC80A;
+    margin: 5% 0;
+    transition-duration: 0.2s;
+    outline: none;
+    font-family: montserrat;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 1em;
+}
+
+#contact-button:hover {
+    background-color: #FFC80A;
+    color: black;
+    transition-duration: 0.2s;
+    border: 3px solid #FFC80A;
+    cursor: pointer;
 }
 
 #map {
