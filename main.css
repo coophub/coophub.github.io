@@ -1643,3 +1643,7 @@ input:checked + .features-slider:before {
 footer a{
     width: auto;
 }
+
+.member a{
+    width: 2.1em;
+}
