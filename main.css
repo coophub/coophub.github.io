@@ -824,6 +824,7 @@ p#copyright:hover {
 .teamphotos {
     display: block;
 }
+
 /*Team Title*/
 .teamfancy {
     margin-bottom: 15em;
@@ -853,19 +854,17 @@ p#copyright:hover {
 }
 .title {
   margin: 10em 0 4em 0;
+  padding-top: 15em
 }
 /*Team Names*/
 .teamnames{
     text-align: left;
     color: black;
     position: center;
-
-}
-.teamname{
     display: inline;
-    text-align: center;
-    margin-left: 12em;
-
+}
+.teamname {
+    display: inline;
 }
 /*Team Social*/
 .fa-team {
@@ -899,31 +898,31 @@ p#copyright:hover {
 .AndrewSocial{
     font-size: 3px;
     width: 3px;
-    margin-left: 34em;
+    margin-left: 54em;
     display: inline;
 }
 .LucasSocial{
     font-size: 3px;
     width: 3px;
-    margin-left: 34em;
+    margin-left: 69em;
     display: inline;
 }
 .BenoitSocial{
     width: 3px;
     font-size: 3px;
-    margin-left: 28em;
+    margin-left: 70em;
     display: inline;
 }
 .DeidreickSocial{
     font-size: 3px;
     width: 3px;
-    margin-left: 33em;
+    margin-left: 69em;
     display: inline;
 }
 .DanielSocial{
     font-size: 3px;
     width: 3px;
-    margin-left: 32em;
+    margin-left: 68em;
     display: inline;
 }
 
