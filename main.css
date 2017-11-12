@@ -821,7 +821,9 @@ p#copyright:hover {
     text-align: center;
 
 }
-
+.teamphotos {
+    display: block;
+}
 /*Team Title*/
 .teamfancy {
     margin-bottom: 15em;
