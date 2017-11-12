@@ -814,15 +814,24 @@ p#copyright:hover {
 /*TEAM SECTION*/
 #teamcontainer{
     background-color: white;
-
+    height: auto;
+    width: auto;
+    padding: 3em;
 }
 .teamtext{
     color: black;
     text-align: center;
-
 }
 .teamphotos {
     display: block;
+    margin-bottom: 1em;
+    transition-duration: 0.3s;
+    box-shadow: 0 0 5px #222222;
+}
+
+.teamphotos:hover {
+    transition-duration: 0.3s;
+    filter: blur(10px) grayscale(1);
 }
 
 /*Team Title*/
@@ -854,9 +863,9 @@ p#copyright:hover {
 }
 .title {
   margin: 10em 0 4em 0;
-  padding-top: 15em
 }
 /*Team Names*/
+/*
 .teamnames{
     text-align: left;
     color: black;
@@ -866,6 +875,26 @@ p#copyright:hover {
 .teamname {
     display: inline;
 }
+*/
+
+.members {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height:auto;
+    align-content: flex-start;
+}
+
+.member {
+
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(238, 238, 238, 0.9);
+    padding:2em 2em;
+}
+
+
+
 /*Team Social*/
 .fa-team {
     cursor: pointer;
@@ -892,6 +921,8 @@ p#copyright:hover {
     color: #eeeeee;
     background-color: #FFC80A;
 }
+
+/*
 .teamsocial{
     display: inline;
 }
@@ -925,7 +956,7 @@ p#copyright:hover {
     margin-left: 68em;
     display: inline;
 }
-
+*/
 /*CONTACT*/
 #contact {
     height: auto;
