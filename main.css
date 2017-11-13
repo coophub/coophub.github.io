@@ -894,7 +894,7 @@ p#copyright:hover {
 
 .teamphotos:hover {
     transition-duration: 0.3s;
-    filter: blur(10px) grayscale(1);
+    filter: blur(10px) grayscale(1) brightness(3);
 }
 
 .teamphotos:hover + .num2 {
@@ -923,7 +923,7 @@ p#copyright:hover {
 }
 
 .image:hover > .teamphotos1212 {
-    filter: blur(15px) grayscale(0.5);
+    filter:  brightness(2) blur(15px) grayscale(0.5);
     transition-duration: 0.3s;
 }
 
