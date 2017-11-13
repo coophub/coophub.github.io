@@ -721,6 +721,7 @@ p#copyright:hover {
 #about {
   height: auto;
   padding: 3em;
+  padding-top: 4em;
   text-align: center;
   color: #eeeeee;
   font-size: 25px;
