@@ -1,6 +1,7 @@
 
 // Add smooth scrolling to all links
 $(document).ready(function(){
+    $("#web-view").fadeOut();
     $("a").on('click', function(event) {
 
         // Make sure this.hash has a value before overriding default behavior
@@ -24,10 +25,11 @@ $(document).ready(function(){
     // Fade out image when switch is clicked
     $('#features-switch').click(function() {
         if($("#features-switch").is(':checked')){
-            console.log("hello")
-            $("#features-iphone-container").fadeOut();
+            $("#mobile-view").fadeOut();
+            $("#web-view").fadeIn();
         } else {
-            $("#features-iphone-container").fadeIn();
+            $("#mobile-view").fadeIn();
+            $("#web-view").fadeOut();
         }
     });
 });
