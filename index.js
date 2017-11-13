@@ -316,9 +316,9 @@ $(document).ready(
         $('.Read-button').on('click', function(){
             $('.panel').toggleClass('-expanded');
             if ($('.panel').hasClass('-expanded')) {
-                $('.Read-button').html('Hide');
+                $('.Read-button').html('HIDE');
             } else {
-                $('.Read-button').html('Read more');
+                $('.Read-button').html('READ MORE');
             }
         });
 
