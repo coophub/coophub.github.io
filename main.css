@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700');
 
 body a,p,ul,li,sub,sup,h1, pre{
     margin: 0;
@@ -716,9 +716,8 @@ p#copyright:hover {
 /* About section */
 
 #about {
-
   height: auto;
-  padding-bottom: 4%;
+  padding: 3em;
   text-align: center;
   color: #eeeeee;
   font-size: 25px;
@@ -726,9 +725,13 @@ p#copyright:hover {
 }
 
 .about_title{
-  font-size: 4em;
+  font-size: 3em;
+  text-align: center;
+  font-family: Montserrat;
   text-transform: uppercase;
   color: #eeeeee;
+    margin: 0;
+    font-weight: 500;
 }
 
 .Read-button{
@@ -847,28 +850,8 @@ p#copyright:hover {
     text-align: center;
     font-size: 4em;
     margin-bottom: 1em;
-    margin-top: 0.5em;
+    margin-top: 1em;
     overflow: hidden;
-}
-.teamfancy:before,
-.teamfancy:after {
- background-color: #333;
- content: "";
- display: inline-block;
- height: 1px;
- position: relative;
- vertical-align: middle;
- width: 50%;
-}
-.teamfancy:before {
- right: 0.5em;
- margin-left: -50%;
-}
-.teamfancy:after {
- left: 0.5em;
- margin-right: -50%;
-}
-.title {
 }
 /*Team Names*/
 /*
@@ -1085,13 +1068,15 @@ p#copyright:hover {
 #contact-top {
     width: 100%;
     text-align: center;
+    padding-top: 3em;
 }
 
 #contact-title {
     font-size: 4em;
     z-index: 4;
     letter-spacing: 2px;
-    padding-top: 5%;
+    padding-top: 1em;
+    color: #444444;
 }
 
 .contact-stuff {
@@ -1103,6 +1088,7 @@ p#copyright:hover {
 }
 
 .contact-stuff a {
+    color: #444444;
     cursor: pointer;
     font-weight: bold;
     transition-duration: 0.3s;
@@ -1212,6 +1198,7 @@ p#copyright:hover {
     border-radius: 10px;
     padding: 10px 60px;
     border: 3px solid #FFC80A;
+    color: #444444;
     margin: 5% 0;
     transition-duration: 0.2s;
     outline: none;
@@ -1223,7 +1210,6 @@ p#copyright:hover {
 
 #contact-button:hover {
     background-color: #FFC80A;
-    color: black;
     transition-duration: 0.2s;
     border: 3px solid #FFC80A;
     cursor: pointer;
@@ -1238,12 +1224,15 @@ p#copyright:hover {
     padding-bottom: 0.2em;
 }
 
+#features {
+    height: 100%;
+    width: 100%;
+}
+
 .features-main-title{
     font-size: 4em;
     text-align: center;
     text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 0.2em;
 }
 
 .features-switch {
