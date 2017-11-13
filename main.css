@@ -277,9 +277,10 @@ span.logo-second {
     cursor: pointer;
     display: none;
     float: right;
-    padding: 28px 20px;
+    padding: 31px 22px;
     position: relative;
     user-select: none;
+    margin: 0;
 }
 
 .topnav .menu-icon .navicon {
