@@ -647,6 +647,7 @@ footer {
 }
 
 .fa-footer:hover {
+    text-decoration: none;
     transition-duration: 0.3s;
     color: #444444;
     background-color: #eeeeee;
@@ -670,6 +671,7 @@ p#copyright {
 
 p#copyright:hover {
     cursor: pointer;
+    text-decoration: none;
     color: #FFC80A;
     transform: scale(1.05,1.05);
     transition-duration: 0.3s;
@@ -820,13 +822,13 @@ p#copyright:hover {
 
 /*TEAM SECTION*/
 #teamcontainer{
-    background-color: white;
+    background-color: #eeeeee;
     height: auto;
     width: auto;
     padding: 3em;
 }
 .teamtext{
-    color: black;
+    color: #232323;
     text-align: center;
 }
 .teamphotos {
@@ -838,12 +840,13 @@ p#copyright:hover {
 
 /*Team Title*/
 .teamfancy {
-    margin-bottom: 15em;
+    text-transform: uppercase;
+    font-family: Montserrat;
     text-align: center;
-    font-family: georgia;
-    font-style: italic;
+    font-size: 400%;
+    margin-bottom: 1em;
+    margin-top: 0.5em;
     overflow: hidden;
-    left: 40%;
 }
 .teamfancy:before,
 .teamfancy:after {
@@ -864,7 +867,6 @@ p#copyright:hover {
  margin-right: -50%;
 }
 .title {
-  margin: 10em 0 4em 0;
 }
 /*Team Names*/
 /*
@@ -879,6 +881,10 @@ p#copyright:hover {
 }
 */
 
+.teamname {
+    color: #eeeeee;
+}
+
 .members {
     display:flex;
     flex-wrap: wrap;
@@ -888,11 +894,13 @@ p#copyright:hover {
 }
 
 .member {
-
+    margin: 1em;
     justify-content: center;
     text-align: center;
-    background-color: rgba(238, 238, 238, 0.9);
+    background-color: #232323;
     padding:2em 2em;
+    transition-duration: 0.3s;
+    box-shadow: 0 0 5px #232323;
 }
 
 
@@ -951,6 +959,11 @@ p#copyright:hover {
     font-style: italic;
 }
 
+.member:hover {
+    transition-duration: 0.3s;
+    transform: scale(1.1,1.1);
+}
+
 #lucasQuote {
     top: 30%;
 }
@@ -960,15 +973,15 @@ p#copyright:hover {
 }
 
 #benoitQuote {
-    top: 10%
+    top: 20%;
 }
 
 #deidrickQuote {
-    top: 10%
+    top: 20%;
 }
 
 #danielQuote {
-    top: 28%
+    top: 28%;
 }
 
 
