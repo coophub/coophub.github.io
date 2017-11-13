@@ -520,7 +520,7 @@ p#pricing-description {
     transition-duration: 0.3s;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 704px) {
     #pricing-block1 {
         border-top-left-radius: 10px;
         border-top-right-radius: 10px;
