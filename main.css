@@ -1102,6 +1102,18 @@ p#copyright:hover {
     padding: 6.5% 0;
 }
 
+.contact-stuff a {
+    cursor: pointer;
+    font-weight: bold;
+    transition-duration: 0.3s;
+}
+
+.contact-stuff a:hover {
+    text-decoration: none;
+    color: #FFC80A;
+    transition-duration: 0.3s;
+}
+
 .contact-label {
     font-size: 1em;
     letter-spacing: 5px;
@@ -1738,4 +1750,8 @@ footer a{
 
 .member a{
     width: 2.1em;
+}
+
+a:hover, a:visited, a:link, a:active{
+    text-decoration: none;
 }
