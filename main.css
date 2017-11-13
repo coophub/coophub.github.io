@@ -452,7 +452,7 @@ p#pricing-title{
     text-transform: uppercase;
     z-index: 2;
     text-align: center;
-    font-size: 400%;
+    font-size: 4em;
     margin: 0;
     color: #eeeeee;
     padding-top: 1em;
@@ -724,13 +724,12 @@ p#copyright:hover {
   font-size: 25px;
   background-color: #323232;
 }
+
 .about_title{
-  font-size: 2.75em;
+  font-size: 4em;
   text-transform: uppercase;
   color: #eeeeee;
 }
-
-
 
 .Read-button{
   font-size: 24px;
@@ -843,7 +842,7 @@ p#copyright:hover {
     text-transform: uppercase;
     font-family: Montserrat;
     text-align: center;
-    font-size: 400%;
+    font-size: 4em;
     margin-bottom: 1em;
     margin-top: 0.5em;
     overflow: hidden;
@@ -1086,7 +1085,7 @@ p#copyright:hover {
 }
 
 #contact-title {
-    font-size: 3.5em;
+    font-size: 4em;
     z-index: 4;
     letter-spacing: 2px;
     padding-top: 5%;
