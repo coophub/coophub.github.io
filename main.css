@@ -739,9 +739,8 @@ p#copyright:hover {
 }
 
 .Read-button{
-  font-size: 0.75em;
+    font-weight: 600;
   font-family: Montserrat;
-    font-weight: 400;
   background-color: #FFC80A;
     margin-top: 1em;
   border-radius: 20px;
