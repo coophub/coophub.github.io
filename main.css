@@ -789,6 +789,7 @@ p#copyright:hover {
     font-weight: 300;
     overflow-y:hidden;
     margin-right: auto;
+    margin-bottom: 20px;
   }
 
 }
