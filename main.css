@@ -82,11 +82,9 @@ body {
 }
 
 .info {
-    margin: auto auto;
     vertical-align: middle;
     text-align: center;
     position: relative;
-    margin-bottom: 100px;
 }
 
 span.logo-first {
@@ -129,6 +127,12 @@ span.logo-second {
     min-height: 100%;
     width: auto;
     align-items: center;
+    justify-content: center;
+}
+
+.downArrow {
+    position: relative;
+    display: flex;
 }
 
 #down{
@@ -143,10 +147,8 @@ span.logo-second {
   user-select: none;
   cursor: pointer;
   top: 90px;
-
-
-
 }
+
 #down:hover{
   color: #FFC80A;
   background-color: #323232;
@@ -1222,11 +1224,6 @@ p#copyright:hover {
 
 .features-container{
     padding-bottom: 0.2em;
-}
-
-#features {
-    height: 100%;
-    width: 100%;
 }
 
 .features-main-title{
