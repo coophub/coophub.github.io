@@ -719,7 +719,7 @@ p#copyright:hover {
 
 #about {
   height: auto;
-  padding: 2.5em;
+  padding: 3em;
   text-align: center;
   color: #eeeeee;
   font-size: 25px;
@@ -727,8 +727,8 @@ p#copyright:hover {
 }
 
 .about_title{
-  font-size: 3em;
-  text-align: center;
+  font-size: 2.5em;
+  text-align:center;
   font-family: Montserrat;
   text-transform: uppercase;
   color: #eeeeee;
