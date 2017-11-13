@@ -732,11 +732,13 @@ p#copyright:hover {
 }
 
 .Read-button{
-  font-size: 24px;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 0.75em;
+  font-family: Montserrat;
+    font-weight: 400;
   background-color: #FFC80A;
+    margin-top: 5%;
   border-radius: 20px;
-  padding: 20px 70px;
+  padding: 10px 40px;
   border: 5px solid #FFC80A;
   letter-spacing: 3px;
   transition-duration: 0.35s;
@@ -747,8 +749,9 @@ p#copyright:hover {
 }
 
 .Read-button span {
-  font-weight: 400;
-  letter-spacing: 2px;
+  font-weight: 600;
+    font-family: Montserrat;
+  letter-spacing: 3px;
   cursor: pointer;
   display: inline-block;
   position: relative;
