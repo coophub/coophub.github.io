@@ -1263,10 +1263,10 @@ p#copyright:hover {
 .features-slider:before {
   position: absolute;
   content: "";
-  height: 2.6em;
-  width: 10.2em;
-  left: 0.04em;
-  bottom: -0.01em;
+  height: 2.63em;
+  width: 10.3em;
+  left: 0.01em;
+  bottom: 0.00em;
   background-color: #FFC80A;
   -webkit-transition: .4s;
   transition: .4s;
@@ -1652,7 +1652,7 @@ input:checked + .features-slider:before {
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
     overflow: hidden; }
   .fdb-block .fdb-touch {
-    border-top: solid 5px #528bff; }
+    border-top: solid 5px #FFC80A; }
   .fdb-block h1, .fdb-block .text-h1 {
     font-size: 2.75rem;
     margin-bottom: .5em;
