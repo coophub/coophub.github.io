@@ -82,11 +82,9 @@ body {
 }
 
 .info {
-    margin: auto auto;
     vertical-align: middle;
     text-align: center;
     position: relative;
-    margin-bottom: 100px;
 }
 
 span.logo-first {
@@ -129,6 +127,12 @@ span.logo-second {
     min-height: 100%;
     width: auto;
     align-items: center;
+    justify-content: center;
+}
+
+.downArrow {
+    position: relative;
+    display: flex;
 }
 
 #down{
@@ -143,10 +147,8 @@ span.logo-second {
   user-select: none;
   cursor: pointer;
   top: 90px;
-
-
-
 }
+
 #down:hover{
   color: #FFC80A;
   background-color: #323232;
@@ -275,9 +277,10 @@ span.logo-second {
     cursor: pointer;
     display: none;
     float: right;
-    padding: 28px 20px;
+    padding: 31px 22px;
     position: relative;
     user-select: none;
+    margin: 0;
 }
 
 .topnav .menu-icon .navicon {
@@ -725,8 +728,8 @@ p#copyright:hover {
 }
 
 .about_title{
-  font-size: 3em;
-  text-align: center;
+  font-size: 2.5em;
+  text-align:center;
   font-family: Montserrat;
   text-transform: uppercase;
   color: #eeeeee;
@@ -1222,11 +1225,7 @@ p#copyright:hover {
 
 .features-container{
     padding-bottom: 0.2em;
-}
 
-#features {
-    height: 100%;
-    width: 100%;
 }
 
 .features-main-title{
@@ -1617,6 +1616,10 @@ input:checked + .features-slider:before {
     background-color: #FFC80A;
 }
 
+#features {
+    margin: 3em;
+}
+
 .fdb-block {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -1624,7 +1627,7 @@ input:checked + .features-slider:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizelegibility;
-  padding: 100px 0;
+  padding: 100px 3em;
   color: #444444;
   position: relative;
   background-size: cover;
