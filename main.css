@@ -716,11 +716,16 @@ p#copyright:hover {
 #about {
 
   height: auto;
-  padding-bottom: 5%;
+  padding-bottom: 4%;
   text-align: center;
   color: #eeeeee;
   font-size: 25px;
   background-color: #323232;
+}
+.about_title{
+  font-size: 2.75em;
+  text-transform: uppercase;
+  color: #eeeeee;
 }
 
 
@@ -734,8 +739,10 @@ p#copyright:hover {
   border: 5px solid #FFC80A;
   letter-spacing: 3px;
   transition-duration: 0.35s;
-  outline: none;
   cursor: pointer;
+}
+.Read-button:focus{
+  outline: 0;
 }
 
 .Read-button span {
