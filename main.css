@@ -730,6 +730,7 @@ p#copyright:hover {
 .about_title{
   font-size: 4em;
   text-align:center;
+    padding-top: 0.75em;
   font-family: Montserrat;
   text-transform: uppercase;
   color: #eeeeee;
