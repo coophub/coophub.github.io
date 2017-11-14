@@ -1113,6 +1113,16 @@ p#copyright:hover {
     margin-top: 10%;
 }
 
+.filled {
+    border-color: #FFC80A;
+    transition-duration: 0.5s;
+}
+
+.notfilled {
+    border-color: #ccc;
+    transition-duration: 0.5s;
+}
+
 #contact-name-box {
     background-color: transparent;
     color: black;
@@ -1120,7 +1130,6 @@ p#copyright:hover {
     outline: none;
     outline-style: none;
     border-width: 0 0 2px 0;
-    border-color: #ccc;
     width: 95%;
     float: left;
     transition-duration: 0.5s;
@@ -1135,7 +1144,6 @@ p#copyright:hover {
     outline: none;
     outline-style: none;
     border-width: 0 0 2px 0;
-    border-color: #ccc;
     float: right;
     width: 95%;
     box-sizing: border-box;
@@ -1154,7 +1162,6 @@ p#copyright:hover {
     outline: none;
     outline-style: none;
     border-width: 2px;
-    border-color: #ccc;
     width: 100%;
     resize: none;
     transition-duration: 0.5s;
