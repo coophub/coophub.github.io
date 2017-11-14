@@ -1231,6 +1231,7 @@ p#copyright:hover {
     font-size: 4em;
     text-align: center;
     padding-bottom: 0.5em;
+    padding-top: 1.5em;
     text-transform: uppercase;
 }
 
@@ -1627,7 +1628,7 @@ input:checked + .features-slider:before {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizelegibility;
-  padding: 3.5em 3em;
+  padding: 0 3em;
   color: #444444;
   position: relative;
   background-size: cover;
