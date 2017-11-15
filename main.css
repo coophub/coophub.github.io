@@ -623,12 +623,13 @@ footer {
 }
 
 .fa-footer {
+    width: 2.1em;
+    height: 2.1em;
     cursor: pointer;
     align-content: center;
     padding: 0.625em;
     margin: 0 0.375em 0.25em ;
     font-size: 1.25em;
-    width: 20px;
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
@@ -1623,7 +1624,6 @@ input:checked + .features-slider:before {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     text-rendering: optimizelegibility;
-    padding: 0 3em;
     color: #444444;
     position: relative;
     background-size: cover;
