@@ -68,7 +68,6 @@
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
-
     </header>
 
     <section class="photo" id="home">
@@ -119,7 +118,7 @@
         <div class="align-items-center features-container" style="text-align: center;">
             <p class="features-main-title">Features</p>
             <label class="features-switch">
-                <input type="checkbox" id="features-switch">
+                <input type="checkbox" id="features-switch" style="display: none;">
                 <span class="features-slider features-round">
                 <p class="features-web-tab">Mobile</p>
                 <p class="features-mobile-tab">Web</p>
@@ -130,36 +129,42 @@
         <div class="col-12 col-sm-6 col-lg-3">
           <img class="fdb-icon mt-3 mt-xl-5" alt="image" src="./Images/features/img_round.png">
           <h4><strong>Accessibility</strong></h4>
-          <p>Discover new oppurtunities at any location any time.</p>
+          <p style="color: #eeeeee;">Discover new oppurtunities at any location any time.</p>
 
           <img class="fdb-icon mt-3 mt-xl-5" alt="image" src="./Images/features/img_round.png">
           <h4><strong>Notifications</strong></h4>
-          <p>Receive reminders on upcoming appointments.</p>
+          <p style="color: #eeeeee;">Receive reminders on upcoming appointments.</p>
 
           <img class="fdb-icon mt-3 mt-xl-5" alt="image" src="./Images/features/img_round.png">
           <h4><strong>Cross Platform</strong></h4>
-          <p>On the web, on the go.</p>
+          <p style="color: #eeeeee;">On the web, on the go.</p>
         </div>
 
         <div class="col-12 col-sm-6 col-lg-3 text-left pt-3 pt-sm-0 order-lg-12">
           <img class="fdb-icon mt-3 mt-xl-5" alt="image" src="./Images/features/img_round.png">
           <h4><strong>User Friendly</strong></h4>
-          <p>Simple and intuitive experience.</p>
+          <p style="color: #eeeeee;">Simple and intuitive experience.</p>
 
           <img class="fdb-icon mt-3 mt-xl-5" alt="image" src="./Images/features/img_round.png">
           <h4><strong>Personalized</strong></h4>
-          <p>Tailored for employers, students, and coop staff.</p>
+          <p style="color: #eeeeee;">Tailored for employers, students, and coop staff.</p>
 
           <img class="fdb-icon mt-3 mt-xl-5" alt="image" src="./Images/features/img_round.png">
           <h4><strong>Unified</strong></h4>
-          <p>One centralized application.</p>
+          <p style="color: #eeeeee;">One centralized application.</p>
         </div>
 
-        <div class="col-7 col-sm-4 col-lg-4 m-auto pt-5 pt-lg-0 order-lg-1">
+        <div class="col-7 col-sm-4 col-lg-4 m-auto pt-5 pt-lg-0 order-lg-1" style="padding-bottom: 3em;">
           <img class="img-fluid br-b-0" alt="image" src="./Images/features/img_very_tall.png">
         </div>
       </div>
-      <div class="row text-left" id="web-view" style="margin-bottom: 2em; margin-top: 2em;">
+      <div class="row text-left" id="web-view" style="margin-bottom: 2em; margin-top: 2em; justify-content: center;">
+        <div class="features-browser-container"> 
+            <div class="features-browser"> 
+                <img src="./Images/features/web-mockup.png" /> 
+            </div> 
+        </div> 
+        
         <div class="col-12 col-md-8 m-auto col-lg-4">
           <div class="fdb-box fdb-touch">
             <h2>Advanced Tools</h2>
@@ -179,11 +184,7 @@
             <p>Sign up only once. Any school, any workplace. Largest connection between schools and employers.
             </p>
           </div>
-        </div>
-      </div>
-
-    </div>
-  </section>
+    </section>
 
     <section class="photo" id="teamcontainer">
         <div class="teamtext">
@@ -320,7 +321,7 @@
                     </ul>
                 </p>
                 <a href="#contact">
-                        <button class="pricing-block-button">Contact us</button>
+                    <button class="pricing-block-button">Contact us</button>
                 </a>
             </div>
         </div>
@@ -348,15 +349,15 @@
             <div id="contact-form">
                 <div id="name-elements">
                     <!--<p id="contact-name">Name</p>-->
-                    <input id="contact-name-box" placeholder="Name"/>
+                    <input id="contact-name-box" class="notfilled" placeholder="Name"/>
                 </div>
                 <div id="email-elements">
                     <!--<p id="contact-email">Email</p>-->
-                    <input id="contact-email-box" placeholder="Email"/>
+                    <input id="contact-email-box" class="notfilled" placeholder="Email"/>
                 </div>
                 <div id="message-elements">
                     <!--<p id="contact-message">Message</p>-->
-                    <textarea rows="7" id="contact-message-box" placeholder="Message"></textarea>
+                    <textarea rows="7" id="contact-message-box" class="notfilled" placeholder="Message"></textarea>
                 </div>
                 <div id="bottom-button">
                     <button id="contact-button">SEND</button>

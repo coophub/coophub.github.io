@@ -316,9 +316,9 @@ $(document).ready(
         $('.Read-button').on('click', function(){
             $('.panel').toggleClass('-expanded');
             if ($('.panel').hasClass('-expanded')) {
-                $('.Read-button').html('Hide');
+                $('.Read-button').html('HIDE');
             } else {
-                $('.Read-button').html('Read more');
+                $('.Read-button').html('READ MORE');
             }
         });
 
@@ -427,8 +427,16 @@ $(document).ready(
                   //$(this).css({'border-color: #ccc'})
               //}
           //});
-
-
+        $('#contact-name-box, #contact-email-box, #contact-message-box').blur(function() {
+            if ($(this).val().length == 0) {
+                $(this).addClass("notfilled");
+                $(this).removeClass("filled");
+            }
+            if ($(this).val().length > 0) {
+                $(this).removeClass("notfilled");
+                $(this).addClass("filled");
+            }
+        })
     }
 );
 
