@@ -409,24 +409,7 @@ $(document).ready(
                 }
             }
         });
-
-        //$("#contact-email-box").focus(function() {
-          //$('#contact-email').css({visibility: 'visible', transition-duration: '1s'})) //transition-duration: '1s')
-
-          //$('#contact-email').hide();
-          // $('#contact-email').fadeIn(300);
-         //});
-         //$('#contact-name-box').blur(function(){
-              //var sd = $(this).attr('placeholder');
-              //if( !$(this).val() ) {
-                  //$(this).css({'border-color: #FFC80A'})
-                  //$('#contact-email').css('visibility', 'hidden')
-                  //$('contact-email').show();
-                  //$('contact-email').fadeOut(100);
-              //} else {
-                  //$(this).css({'border-color: #ccc'})
-              //}
-          //});
+        
         $('#contact-name-box, #contact-email-box, #contact-message-box').blur(function() {
             if ($(this).val().length == 0) {
                 $(this).addClass("notfilled");
