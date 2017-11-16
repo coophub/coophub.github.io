@@ -1045,7 +1045,9 @@ p#copyright:hover {
     z-index: 2;
     margin-top: 5%;
     overflow: hidden;
+
 }
+
 
 #contact-info {
     width: 40%;
@@ -1060,6 +1062,27 @@ p#copyright:hover {
     text-align: left;
     display: block;
     margin-right: 5%;
+}
+
+@media(max-width:960px){
+  #contact-content{
+    display:block;
+  }
+  #contact-info{
+    width: 80%;
+    margin-left: 10px;
+    text-align: center;
+  }
+  #contact-form{
+    width: 80%;
+    margin-left: 40px;
+  }
+  input{
+    margin-bottom: 40px;
+    float: none;
+    width: 100%;
+  }
+
 }
 
 #contact-top {
