@@ -409,7 +409,7 @@ $(document).ready(
                 }
             }
         });
-        
+
         $('#contact-name-box, #contact-email-box, #contact-message-box').blur(function() {
             if ($(this).val().length == 0) {
                 $(this).addClass("notfilled");
