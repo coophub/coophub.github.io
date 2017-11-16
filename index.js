@@ -440,3 +440,12 @@ $(window).scroll(function() {
         $('nav  a:first').addClass('active');
     }
 }).scroll();
+
+$(window).scroll(function(){
+  var topWindow  = $(window).scrollTop();
+  var topWindow = topWindow*1.5;
+  var WindowHeight = $(window).height();
+  var position = topWindow / WindowHeight;
+  position = 1-position;
+  $('.BtnDown').css('opacity', position);
+});

@@ -125,13 +125,13 @@ span.logo-second {
     justify-content: center;
 }
 
-.downArrow {
-    position: relative;
-    display: flex;
+.BtnDown{
+  position: absolute;
+  top: 755px;
+
 }
 
-#down{
-    position: relative;
+#DowBtn{
     display: inline-block;
     border: none;
     background-color: transparent;
@@ -141,14 +141,19 @@ span.logo-second {
     outline: none;
     user-select: none;
     cursor: pointer;
-    top: 90px;
+
 }
 
-#down:hover{
+#DowBtn:hover{
     color: #FFC80A;
     background-color: #323232;
     transform: scale(1.2,1.2);
     transition-duration: 0.2s;
+}
+@media (max-width: 1024px){
+  .BtnDown{
+    top:670px;
+  }
 }
 
 /* Navigation Bar Menu Button */
@@ -1675,7 +1680,7 @@ input:checked + .features-slider:before {
     font-size: 1.125rem;
     margin-bottom: .5em;
     margin-top: .3em;
-    font-weight: 400; 
+    font-weight: 400;
 }
 
 .fdb-block h4, .fdb-block .text-h4 {
