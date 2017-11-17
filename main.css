@@ -128,10 +128,6 @@ span.logo-second {
 .BtnDown{
   position: absolute;
   top:95%;
-
-
-
-
 }
 
 #DowBtn{
@@ -155,7 +151,7 @@ span.logo-second {
 }
 @media (max-width: 1024px){
   .BtnDown{
-    top:50%;
+    top:94%;
   }
 }
 
