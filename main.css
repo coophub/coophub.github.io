@@ -757,10 +757,11 @@ p#copyright:hover {
 }
 
 .panel{
+
     font-weight: 400;
     font-size: 20px;
     position: relative;
-    max-height: 90px;
+    max-height: 115px;
     overflow: hidden;
     -webkit-transition: max-height 1s ease;
     transition: max-height 1s ease;
@@ -772,9 +773,11 @@ p#copyright:hover {
         padding-bottom: 30%;
     }
     .panel{
-        max-height: 160px;
+        text-align:left;
+        max-height: 190px;
+        width: 100%;
         font-weight: 400;
-        font-size: 0.72em;
+        font-size: 1.0em;
         overflow-y:hidden;
         margin-right: auto;
         margin-bottom: 20px;
